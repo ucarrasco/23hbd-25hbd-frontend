@@ -1,0 +1,24 @@
+.teaser-container {
+  color: #f5cb2c;
+  // background: linear-gradient(3deg, #07041d 30%, #330c19 120%);
+
+  .timer-container {
+    text-shadow: 2px 2px 0px #862e11;
+  }
+
+  .teaser-footer {
+    color: #7a8699;
+    text-decoration: underline;
+  }
+}
+
+.stars-effect {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@import 'teaser-stars-effect.sass'

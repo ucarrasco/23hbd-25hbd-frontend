@@ -1,0 +1,19 @@
+.hbd-content-container {
+
+  $padding: 1.5rem;
+  padding: $padding;
+  position: relative;
+  z-index: 1;
+  background-color: var(--content-container-bg-color);
+  // background-image: url(~assets/images/23hbd/paper-pattern.png);
+  // background-size: 120px 120px;
+
+  @include media-breakpoint-up(md) {
+    @include make-main-container-max-widths();
+  }
+  @include media-breakpoint-up(sm) {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 3px 0px #1c2e5221;
+  }
+}

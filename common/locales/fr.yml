@@ -1,0 +1,383 @@
+global:
+  'yes': Oui
+  'no': Non
+  sign-in: Connexion
+  register: Inscription
+  my-account: Mon compte
+  log-out: Déconnexion
+  username: Pseudo
+  email: Email
+  birth-date: Date de naissance
+  country: Pays
+  webcam: Stream
+  age: Age
+  description: Description
+  submit: Valider
+  edit: Modifier
+  delete: Supprimer
+  cancel: Annuler
+  save: Enregistrer
+  invalid-birth-date: Date de naissance invalide
+  invalid-email: Email invalide
+  invalid-username: Nom d'utilisateur invalide
+  cover-page: Page de couverture
+  server-error: 'Erreur serveur :-('
+  challenge-type:
+    classico: Classico
+    turbomedia: Turbomedia
+    webtoon: Webtoon
+  planche-upload:
+    instructions-20200321:
+      file-type:
+        classico: '<strong>Fichiers autorisés :</strong> <strong>.jpg</strong>, <strong>.png</strong> ou <strong>.gif</strong> ne dépassant pas <strong>1 Mo (2 Mo pour les gifs)</strong>'
+        turbomedia: '<strong>Fichiers autorisés :</strong> <strong>.jpg</strong>, <strong>.png</strong> ou <strong>.gif</strong> ne dépassant pas <strong>1 Mo (2 Mo pour les gifs)</strong>'
+        webtoon: '<strong>Fichiers autorisés :</strong> <strong>.jpg</strong>, <strong>.png</strong> ou <strong>.gif</strong> ne dépassant pas <strong>1 Mo (2 Mo pour les gifs)</strong>'
+      image-dimensions:
+        classico: '<strong>Taille des images :</strong> <strong>800×600</strong> (format paysage) ou <strong>600×800</strong> (format portrait)'
+        turbomedia: '<strong>Taille des images :</strong> <strong>700×525</strong> (format paysage) ou <strong>525×700</strong> (format portrait)'
+        webtoon: '<strong>Taille des images :</strong> <strong>800×1280</strong> (format portrait)'
+  social:
+    facebook: Notre page Facebook
+    twitter: Notre compte Twitter
+    instagram: Notre compte Instagram
+    discord: Notre serveur Discord
+  read-interview: Lire l'interview
+  interview-coming-soon: Interview à venir
+  download-edition-poster: Télécharger l'affiche
+  download-here: Téléchargement ici
+  by-author: Par {{author}}
+sign-in-page:
+  username:
+    label: Pseudo
+  password:
+    label: Mot de passe
+  submit: Connexion
+  forgot-password:
+    title: Mot de passe oublié ?
+    instructions: 'Pas de panique, entre ton mail et tu en recevras un nouveau !'
+    submit: envoyer
+account-page:
+  menu:
+    profile: Profil
+    planches: Planches
+    comments: Commentaires
+  profile-page:
+    avatar:
+      title: Avatar
+      img-alt: 'Image de profil de {{username}}'
+      edit: $t(global.edit)
+      modal:
+        title: Changer d'avatar
+        instructions-20200322: Image en jpg de moins de 200ko ne dépassant pas 135x135px.
+        delete: $t(global.delete)
+        cancel: $t(global.cancel)
+        submit: Envoyer
+        done: Avatar modifié !
+        delete-done: Avatar supprimé
+        validation-20200322:
+          invalid-image: Image invalide
+          invalid-file-type: L'image doit être au format jpg
+          invalid-image-dimensions: L'image ne doit pas dépasser les 135x135px
+          invalid-file-size: L'image ne doit pas dépasser les 200ko
+    username:
+      title: $t(global.username)
+      edit: $t(global.edit)
+      modal:
+        title: Nouveau pseudo
+        instructions: 'Attention, si tu changes de pseudo, l''actuel deviendra disponible pour d''autres personnes.'
+        cancel: $t(global.cancel)
+        submit: $t(global.submit)
+        done: Pseudo modifié !
+    password:
+      title: Modifier le mot de passe
+      modal:
+        title: Nouveau mot de passe
+        instructions: Minimum 6 caractères
+        cancel: $t(global.cancel)
+        submit: $t(global.submit)
+        done: Mot de passe modifié !
+    links:
+      title: Liens
+      empty: pas encore de liens
+      add-link: Ajouter un lien
+      reorder-done: Ordre des liens enregistré
+      delete-done: Lien supprimé
+      modal:
+        title: Nouveau lien
+        link-title:
+          label: Titre
+        link-url:
+          label: URL
+        cancel: $t(global.cancel)
+        submit: Ajouter
+        done: Lien ajouté
+    infos:
+      email:
+        label: $t(global.email)
+      birth-date:
+        label: $t(global.birth-date)
+      country:
+        label: $t(global.country)
+      webcam:
+        label: URL de stream (twitch, etc)
+      description:
+        label: $t(global.description)
+      submit: $t(global.save)
+      done: Infos mises à jour
+    subscribe-to-edition:
+      title: 'Édition {{year}}'
+      submit: 'S''inscrire à l''édition {{year}}'
+      done: Inscription ok !
+    participation:
+      title: 'Édition {{year}}'
+      team:
+        label: Je participe
+        without-team:
+          label: Seul
+        with-team:
+          label: En collaboration
+      gathering:
+        label: Regroupement
+        in-gathering:
+          label: $t(global.yes)
+        no-gathering:
+          label: $t(global.no)
+      teamates:
+        label: Equipiers
+      gathering-name:
+        label: Nom du regroupement
+      town:
+        label: Ville
+      submit: $t(global.save)
+      done: Infos de participation mises à jour
+  comments-page:
+    allow-comment:
+      label: 'Autoriser les commentaires :'
+      'on': $t(global.yes)
+      'off': $t(global.no)
+    enable-email-notifications:
+      label: 'Être averti par email lors de nouveaux commentaires :'
+      'on': $t(global.yes)
+      'off': $t(global.no)
+    submit: $t(global.save)
+    done: Préférences enregistrées
+  planches-page:
+    lose-achievement-warning: '<0>Attention !</0> Le temps est fini, si tu fais des modifications maintenant, tu perdras {{yourAchievement}} !'
+    upload-not-possible-yet: L'upload de planches n'est pas encore possible...
+    upload-not-possible-anymore: L'upload de planches n'est plus possible pour cette édition.
+    reorder-mode:
+      start: Modifier ordre
+      end: ✓ Terminé
+      instructions: Déplace tes planches pour les réordonner.
+      done: Ordre des pages enregistré
+    planche-delete-done: Page supprimée
+    planche-img-alt: 'Page {{number}}'
+    challenge-type:
+      label: 'Mode de participation :'
+      submit: $t(global.submit)
+      done: Mode de participation mis à jour
+    current-challenge-type: 'Mode de participation :'
+    planche-upload:
+      drag-n-drop-tip: Tu peux aussi glisser tes fichiers vers cette page pour ajouter tes planches :-)
+      submit: $t(global.submit)
+      done: Page uploadée !
+      file-validation:
+        invalid-image: Image invalide
+        invalid-file-type: 'Le type de fichier {{fileType}} n''est pas supporté, les types de fichier valides sont : {{allowedFileTypes}}'
+        invalid-image-dimensions: 'L''image doit être dans un de ces formats: {{allowedImageDimensions}}, les dimensions de l''image sélectionnée sont {{imageDimensions}}.'
+        invalid-file-size: 'Le fichier est trop lourd ({{fileSize}}). Le maximum autorisé est {{maxFileSize}}'
+    link-to-my-participation: 'Lien vers ma participation :'
+    title-edit:
+      save: $t(global.save)
+      cancel: $t(global.cancel)
+      success: Titre enregistré
+      errors:
+        max-characters: 😬 {{max}} caractères max
+        emojis: 😬 Les emojis ne sont pas autorisés dans le titre
+participations-page:
+  info-bar:
+    user-info:
+      no-description: (pas de description)
+    participants-count: Participants
+  display-mode:
+    list: Liste
+    gallery: Galerie
+  completion-filter:
+    any: Tous les inscrits
+    non-empty: Toutes les BD
+    full: BD finies
+  groups:
+    followed:
+      title: Suivis
+      show: (afficher)
+      hide: (masquer)
+      edit-done: ✓ Terminé
+      edit-instructions: Coche les participants que tu veux suivre
+    all:
+      title: Tous les participants
+  user-search:
+    placeholder_short: Rechercher...
+    placeholder_long: Rechercher par pseudo...
+    empty: (Aucun résultat)
+    results-in-other-editions: Résultats dans les autres éditions
+  read-status-indicator:
+    label: Indicateurs de lecture
+    tooltip:
+      unread: '<0>noir</0> : non lu'
+      partially-read: '<0>violet</0> : lecture commencée'
+      read: '<0>gris</0> : lecture finie'
+participation-page:
+  og-title: 'Participation de {{username}} - $t(flavored:global.event-name.short) {{year}}'
+  empty: "Aucune page pour cette BD \U0001F62C"
+  empty-desktop: Pas de planche pour le moment
+  planches:
+    title: Planches
+    lightbox-image-count-separator: sur
+  author:
+    title: Auteur
+    img-alt: 'Image de profil de {{username}}'
+    webcam: Live stream
+    age:
+      title: '$t(global.age) :'
+    country:
+      title: '$t(global.country) :'
+    description:
+      title: '$t(global.description) :'
+    participations:
+      title: Participations
+    links:
+      title: Liens
+    other-participations:
+      edition-x: 'Édition {{year}}'
+  comments:
+    title: Commentaires
+    add-comment:
+      submit: Laisser un commentaire
+      submit-answer: Envoyer réponse
+      cancel-answer: '$t(global.cancel)'
+      name:
+        label: Nom
+      email:
+        label: $t(global.email)
+      website:
+        label: Site
+      done: Commentaire envoyé
+    answer-cta: Répondre
+    add-answer-cta: Ajouter une réponse
+  breadcrumb:
+    participations-page: Participations {{year}}
+    participation-page: "{{username}}"
+blog-page:
+  posts-summary:
+    title: Tous les posts
+register-page:
+  title_active-edition: 'Inscription aux $t(flavored:global.event-name.long) {{year}}'
+  title_no-active-edition: Inscription
+  username:
+    label: $t(global.username)
+  email:
+    label: $t(global.email)
+  birth-date:
+    label: $t(global.birth-date)
+  submit: $t(global.submit)
+  already-registered-tip: '<0><0>Note :</0> Si tu as déjà participé par le passé, tu n''as pas besoin de te réinscrire.</0><1><0>Connecte-toi</0> à ton compte et active l''édition {{year}}.</1>'
+  all-good:
+    title: All good!
+    text: 'Un e-mail contenant ton mot de passe t''a été envoyé à l''adresse {{email}}. Va-donc voir !'
+layout:
+  main-menu:
+    home: Accueil
+    rules: Règlement
+    gallery: Lire les BDs
+    blog: Blog
+    fanarts: Fanarts
+    random-comic: Random
+    participations: Participations
+    participants: Participants
+    sign-in: $t(layout.right-menu.sign-in)
+  right-menu:
+    sign-in: Login
+    register: $t(global.register)
+    my-account: $t(global.my-account)
+    log-out: $t(global.log-out)
+  timer:
+    next-edition-in: 'Prochaine édition dans :'
+    begins-in: 'Ça commence dans :'
+    ends-in: 'C''est fini dans :'
+    ended-since: 'C''est fini depuis :'
+    days: '{{units}}j'
+    hours: '{{units}}h'
+    minutes: '{{units}}m'
+    seconds: '{{units}}s'
+  social-links:
+    facebook: $t(global.social.facebook)
+    twitter: $t(global.social.twitter)
+    instagram: $t(global.social.instagram)
+    discord: $t(global.social.discord)
+feedback:
+  db-locked: 'Les modifications sont temporairement désactivées sur le site, réessaye dans quelques minutes !'
+  register:
+    email-already-exists: 'Un compte existe déjà avec l''e-mail {{email}}'
+    username-already-exists: 'Le nom d''utilisateur {{username}} est déjà pris'
+    invalid-birth-date: $t(global.invalid-birth-date)
+    invalid-email: $t(global.invalid-email)
+    invalid-username: $t(global.invalid-username)
+  reset-password:
+    found-no-account: 'Aucun compte n''a été trouvé avec l''e-mail {{email}}'
+  sign-in:
+    user-not-found: 'Le compte {{username}} n''existe pas'
+    wrong-password: Mauvais mot de passe
+  add-page:
+    uploads-closed-on-edition: L'envoi de planche n'est plus possible pour cette édition !
+    invalid-file-type: 'Ce type de fichier n''est pas autorisé, formats autorisés : {{allowedFileTypes}}'
+    invalid-image-dimensions: 'La planche doit être dans un des formats suivants : {{allowedImageDimensions}}'
+    invalid-file-size: 'Le fichier est trop lourd, maximum autorisé : {{maximumFileSize}}'
+  follow-status:
+    followed: suivi !
+    unfollowed: non suivi
+email:
+  register:
+    subject_active-edition: 'Inscription aux $t(flavored:global.event-name.long) {{year}}'
+    subject_no-active-edition: 'Inscription aux $t(flavored:global.event-name.long)'
+    text: |
+      Salut {{username}} !
+      Merci pour ton inscription aux $t(flavored:global.event-name.long) !
+
+      Voici ton mot de passe : {{password}}
+
+      Tu peux maintenant te connecter sur le site :-)
+
+      (PS: Tu peux (et devrais) modifier ton mot de passe sur le site dans la partie "$t(global.my-account)")
+  reset-password:
+    subject: Réinitialisation mot de passe
+    text: 'Voici ton nouveau mot de passe pour le compte {{username}} : {{password}}'
+  new-comment-notification:
+    subject: 'Nouveau commentaire de {{authorName}} sur ta BD'
+    text: |
+      Salut {{username}} !
+
+      Un nouveau commentaire a été posté sur ta participation aux $t(flavored:global.event-name.short) {{year}}.
+      Tu peux le consulter à cette adresse : {{participationAbsoluteUrl}}
+
+      =====================
+
+      {{authorName}} :
+
+      {{commentContent}}
+
+      =====================
+
+      Pour ne plus recevoir ces notifications, clique sur ce lien : {{unsubscribeAbsoluteUrl}}
+      ou va dans la partie "$t(global.my-account)" sur le site : {{myAccountAbsoluteUrl}}
+    html: |
+      <div>Salut {{username}} !</div>
+      <p>Un nouveau commentaire a été posté sur ta participation aux $t(flavored:global.event-name.short) {{year}}.</p>
+      <div style="margin-top: 20px; background: #f7f5f6; padding: 10px 20px; color: #4e4b4c; font-size: 1.1em;">
+        <div><b>{{authorName}} :</b></div>
+        <div style="margin-top: 5px"><i>{{commentContent}}</i></div>
+      </div>
+      <p style="margin-top: 20px">Tu peux le consulter à cette adresse : <a href="{{participationAbsoluteUrl}}">{{participationAbsoluteUrl}}</a></p>
+      <div style="margin-top: 30px; font-size: 0.8em">
+      Pour ne plus recevoir ces notifications, <a href="{{unsubscribeAbsoluteUrl}}">clique ici</a><br/>
+      ou va sur le site dans <a href="{{myAccountAbsoluteUrl}}">$t(global.my-account)</a>
+      </div>

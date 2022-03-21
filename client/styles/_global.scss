@@ -1,0 +1,78 @@
+@import './mixins';
+
+/**
+  * UTILS..............Utils random
+  * BLOCKS.............Des classes pour les couleurs et les trucs comme ça
+  */
+
+/*------------------------------------*\
+    $UTILS (HBD-specific utils only, the rest go in _utils.scss)
+\*------------------------------------*/
+
+
+a.link-alt {
+  color: #78587f;
+  &:hover {
+    color: #e0a519;
+    text-decoration: none;
+  }
+}
+
+a.link-underlined {
+  text-decoration: underline;
+}
+
+h2.blog-h2 {
+  color: $alt;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.bg-grey {
+  background-color: $gray-300;
+  color: $gray-700;
+}
+
+.post-it-info {
+  background-color: $info;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 1px 1px #50361438;
+  color: #322f42;
+}
+
+body.mobile-reader-mode {
+  overscroll-behavior: contain;
+}
+
+.text-muted-light {
+  color: $text-muted-light;
+}
+
+.text-accent {
+  color: $accent;
+}
+
+
+/*------------------------------------*\
+    $BLOCKS
+\*------------------------------------*/
+
+@include media-breakpoint-up(md) {
+  .border-left-sm-0 {
+    border-left: 1px solid $gray-300;
+  }
+  .border-right-sm-0 {
+    border-right: 1px solid $gray-300;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .border-left-lg-0 {
+    border-left: 1px solid $gray-300;
+  }
+  .border-right-lg-0 {
+    border-right: 1px solid $gray-300;
+  }
+}

@@ -1,0 +1,324 @@
+@import 'variables';
+@import 'mixins';
+
+:root {
+  --content-container-bg-color: #f2f1f3;
+  --container-max-width: 100vw;
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      --container-max-width: #{$container-max-width};
+    }
+  }
+  --container-start-x: calc((100vw - var(--container-max-width)) / 2);
+  --container-end-x: calc(var(--container-start-x) + var(--container-max-width));
+}
+
+.hbd-autbar {
+  margin-top: calc(-1.5rem + 10px);
+}
+
+// .main-main {
+//   @include media-breakpoint-up(md) {
+//     @include paper-border($color: var(--content-container-bg-color), $direction: bottom);
+//   }
+// }
+
+$layout-border: solid 4px #cab79c;
+nav#main-nav {
+  background-color: #555392;
+}
+.hbd-content-container {
+  @include media-breakpoint-up(md) {
+    border-left: $layout-border;
+    border-right: $layout-border;
+  }
+}
+
+body {
+  background-color: #010102;
+
+  // lapins: 700 × 442
+  // floor: 1200 × 770
+  // sablier: 601 × 600
+
+  // --lapins-x: 108%;
+  // --lapins-y: 68px;
+  // --lapins-scale: 0.4;
+  // --sablier-x: 31px;
+  // --sablier-y: 68px;
+  // --sablier-scale: 0.19;
+  // --bg-sablier-x: -21px;
+  // --bg-sablier-y: -30px;
+  // --bg-sablier-scale: 0.4;
+  // --logo-y: 30px;
+  // --logo-width: 190px;
+  // --fade-color: #010101;
+
+  // @include apply-map(
+  //   map-zip((
+  //     (
+  //       background-repeat: no-repeat,
+  //       background-image: url('~assets/images/23hbd/lapins.png'),
+  //       background-size: calc(var(--lapins-scale)*700px) calc(var(--lapins-scale)*442px),
+  //       background-position-x: var(--lapins-x),
+  //       background-position-y: var(--lapins-y),
+  //     ),
+  //     (
+  //       background-repeat: no-repeat,
+  //       background-image: url('~assets/images/23hbd/sablier.png'),
+  //       background-size: calc(var(--sablier-scale)*601px) calc(var(--sablier-scale)*600px),
+  //       background-position-x: var(--sablier-x),
+  //       background-position-y: var(--sablier-y),
+  //     ),
+  //     // (
+  //     //   background-repeat: no-repeat,
+  //     //   background-image: linear-gradient(to bottom, var(--fade-color) 0%, var(--fade-color) 30%, transparent),
+  //     //   background-size: 100% 150px,
+  //     //   background-position-x: 0,
+  //     //   background-position-y: 0,
+  //     // ),
+  //     (
+  //       background-repeat: no-repeat,
+  //       background-image: url('~assets/images/23hbd/large-floor.jpeg'),
+  //       background-size: calc(1200px * var(--bg-sablier-scale)) calc(770px * var(--bg-sablier-scale)),
+  //       background-position-x: var(--bg-sablier-x),
+  //       background-position-y: var(--bg-sablier-y),
+  //     ),
+  //   ))
+  // );
+
+  // @include media-breakpoint-up(sm) {
+
+  //   --lapins-x: calc(var(--container-end-x) - 140px);
+  //   --lapins-y: 243px;
+  //   --sablier-x: calc(var(--container-start-x) - 266px);
+  //   --sablier-y: 210px;
+  //   --bg-lapins-x: calc(var(--container-end-x) - 400px);
+  //   --bg-lapins-y: -60px;
+  //   --bg-sablier-x: calc(var(--container-start-x) - 475px);
+  //   --bg-sablier-y: 90px;
+  //   --bg-lapins-scale: 1;
+  //   --bg-sablier-scale: 0.8;
+
+  //   $bg-layers: (
+  //     (
+  //       background-repeat: no-repeat,
+  //       background-image: linear-gradient(#010101, #010101),
+  //       background-size: 500px 400px,
+  //       background-position-x: var(--container-start-x),
+  //       background-position-y: 0px,
+  //       background-attachment: fixed,
+  //     ),
+  //     (
+  //       background-repeat: no-repeat,
+  //       background-image: url('~assets/images/23hbd/lapins.png'),
+  //       background-size: 0.75*700px 0.75*442px,
+  //       background-position-x: var(--lapins-x),
+  //       background-position-y: var(--lapins-y),
+  //       background-attachment: fixed,
+  //     ),
+  //     (
+  //       background-repeat: no-repeat,
+  //       background-image: url('~assets/images/23hbd/sablier.png'),
+  //       background-size: 0.42*601px 0.42*600px,
+  //       background-position-x: var(--sablier-x),
+  //       background-position-y: var(--sablier-y),
+  //       background-attachment: fixed,
+  //     ),
+  //     ( // bg-lapins
+  //       background-repeat: no-repeat,
+  //       background-image: url('~assets/images/23hbd/large-floor.jpeg'),
+  //       background-size: calc(1200px * var(--bg-lapins-scale)) calc(770px * var(--bg-lapins-scale)),
+  //       background-position-x: var(--bg-lapins-x),
+  //       background-position-y: var(--bg-lapins-y),
+  //       background-attachment: fixed,
+  //     ),
+  //     ( // bg-sablier
+  //       background-repeat: no-repeat,
+  //       background-image: url('~assets/images/23hbd/large-floor-with-door.jpeg'),
+  //       background-size: calc(1200px * var(--bg-sablier-scale)) calc(770px * var(--bg-sablier-scale)),
+  //       background-position-x: var(--bg-sablier-x),
+  //       background-position-y: var(--bg-sablier-y),
+  //       background-attachment: fixed,
+  //     ),
+  //   );
+
+  //   @include apply-map(
+  //     map-zip(
+  //       $bg-layers
+  //     )
+  //   );
+  // }
+
+  // MOBILE
+
+  --lapins-x: 250px;
+  --lapins-y: 30px;
+  --lapins-scale: 0.5;
+
+  @include apply-map(
+    map-zip(
+      (
+        // (
+        //   background-repeat: no-repeat,
+        //   background-image: url('~assets/images/23hbd/lapins.png'),
+        //   background-size: calc(var(--lapins-scale)*700px) calc(var(--lapins-scale)*442px),
+        //   background-position-x: var(--lapins-x),
+        //   background-position-y: var(--lapins-y),
+        //   background-attachment: fixed,
+        // ),
+        (
+          background-image: url('~assets/images/23hbd/bg-mobile.jpg'),
+          background-repeat: no-repeat,
+          background-position-x: -10vw,
+          // background-position-y: -49vw,
+          // background-size: 111vw auto,
+          background-position-y: -300px,
+          background-size: 633px auto,
+        ),
+      )
+    )
+  );
+
+  // TABLET/DESKTOP
+
+  @include media-breakpoint-up(sm) {
+    $bg-w: 1813px;
+    $bg-h: 576px;
+    --sablier-scale: 0.39;
+
+    background-color: #0d0e18;
+
+    $bg-layers: (
+      // (
+      //   background-image: url('~assets/images/23hbd/dice.png'),
+      //   background-repeat: no-repeat,
+      //   background-position-x: calc(var(--container-start-x) - 0px),
+      //   background-position-y: 100px,
+      //   background-size: #{102px*0.8} #{98px*0.8},
+      // ),
+      (
+        background-image: url('~assets/images/23hbd/bg.jpeg'),
+        background-repeat: no-repeat,
+        background-position-x: center,
+        background-position-y: 0,
+        background-size: $bg-w $bg-h,
+      ),
+      (
+        background-image: linear-gradient(to bottom, black 0%, transparent),
+        background-repeat: no-repeat,
+        background-position-x: center,
+        background-position-y: $bg-h,
+        background-size: $bg-w 100px,
+      ),
+      (
+        background-image: url('~assets/images/23hbd/bords.png'),
+        background-repeat: no-repeat,
+        background-position-x: 0,
+        background-position-y: bottom,
+        background-size: 100vw auto,
+      ),
+    );
+    @include apply-map(
+      map-zip(
+        $bg-layers
+      )
+    );
+  }
+}
+
+#main-menu {
+  @include media-breakpoint-up(lg) {
+    margin-left: 30px;
+  }
+}
+
+.bg-sablier {
+  @extend .d-none, .d-sm-block;
+  // @extend .d-lg-block;
+  z-index: -1;
+  @include media-breakpoint-up(lg) {
+    z-index: 10;
+  }
+  position: absolute;
+  pointer-events: none;
+  @include bg-img(
+    $src: url('~assets/images/23hbd/sablier.png'),
+    $src-width: 601px,
+    $src-height: 600px,
+    $dest-width: 601px * 0.39,
+  );
+  left: calc(var(--container-start-x) - 190px);
+  top: 80px;
+}
+
+.bg-sheet {
+  @extend .d-none, .d-sm-block;
+  z-index: 10;
+  position: relative;
+  > div {
+    position: absolute;
+    pointer-events: none;
+    @include bg-img(
+      $src: url('~assets/images/23hbd/sheet.png'),
+      $src-width: 93px,
+      $src-height: 120px,
+      $dest-width: 60px,
+    );
+    left: calc(var(--container-end-x) - 35px);
+    top: -45px;
+  }
+}
+
+.bg-dice {
+  @extend .d-none, .d-sm-block;
+  z-index: -1;
+  position: relative;
+  @include bg-img(
+    $src: url('~assets/images/23hbd/dice.png'),
+    $src-width: 102px,
+    $src-height: 98px,
+    $dest-width: 80px,
+  );
+  left: calc(var(--container-start-x) - 40px);
+  top: -50px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+
+#logo {
+  position: absolute;
+  // top: 30px;
+  width: 50vw;
+
+  @include media-breakpoint-up(sm) {
+    width: 320px;
+  }
+}
+
+#layout-header {
+  height: 180px;
+  @include media-breakpoint-up(sm) {
+    height: 244px;
+  }
+  position: relative;
+}
+
+#social-links {
+  position: absolute;
+  --social-button-bg-color: #{rgba(#25252e, 0.81)};
+  --social-button-size: 30px;
+
+  right: 10px;
+  top: 10px;
+
+  @include media-breakpoint-up(sm) {
+    --social-button-size: 36px;
+    top: unset;
+    right: 0;
+    bottom: 20px;
+  }
+}

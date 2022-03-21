@@ -1,0 +1,64 @@
+@function paper-polygon($direction) {
+  $polygon-points: ();
+  @for $i from 0 to 71 { // important to finish on a odd number otherwise the polygon will be weird due to the path between initial and final points
+    $progress: $i * 20px;
+    $size: ($i % 2) * 100%;
+    $polygon-points: append($polygon-points, if($direction == vertical, $size $progress, $progress $size), comma);
+  }
+  @return $polygon-points;
+}
+
+// should be defined from above:
+// --paper-effect-background-color
+
+.content-main {
+  position: relative;
+
+  &:before, &:after {
+    content: "";
+    // height: 2px;
+    // width: 100%;
+    // transform: rotate(90deg);
+    width: 2px;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    -webkit-clip-path: polygon(paper-polygon(vertical));
+  }
+
+  &:before {
+    background-color: var(--paper-effect-background-color);
+    left: -1px;
+  }
+
+  &:after {
+    background-color: var(--paper-effect-background-color);
+    right: -2px;
+  }
+
+  .content-box {
+    height: auto;
+    overflow: hidden;
+    background: var(--paper-effect-background-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+
+    &:before, &:after {
+      content: "";
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      -webkit-clip-path: polygon(paper-polygon(horizontal));
+    }
+
+    &:before {
+      background-color: var(--paper-effect-background-color);
+      top: -1px;
+    }
+
+    &:after {
+      background-color: var(--paper-effect-background-color);
+      bottom: -2px;
+    }
+  }
+}

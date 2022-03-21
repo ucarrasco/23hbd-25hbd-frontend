@@ -1,0 +1,34 @@
+$side-size: 25vw;
+
+.pswp__ui {
+  .pswp__top-bar {
+    z-index: 2;
+  }
+  .prev-area, .next-area {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    background: #bdbdbd1f;
+    width: $side-size;
+    opacity: 0;
+    &:focus, &:hover {
+      opacity: 0;
+    }
+  }
+  .prev-area {
+    left: 0;
+  }
+
+  .next-area {
+    right: 0;
+  }
+
+  .prev-area, .next-area {
+    animation: none;
+  }
+  &--hidden {
+    .prev-area, .next-area {
+      animation: fade-in-out 0.5s linear 0.2s;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '~styles/variables';
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  &--block {
+    color: #84ffc1;
+  }
+  line-height: 1.2;
+  position: absolute;
+  text-align: center;
+  // font-size: 4vw;
+  top: 7px;
+  left: 0;
+  width: 14em;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.3rem;
+    top: 30px;
+  }
+  &--caption {
+    font-size: 0.8em;
+  }
+  &--counter {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}

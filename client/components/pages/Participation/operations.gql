@@ -1,0 +1,83 @@
+query ParticipationDesktopPage($participationId: ID!) {
+  participation(id: $participationId) {
+    id
+    ...ParticipationDesktopReaderData
+    title
+    pages {
+      url
+      width
+      height
+      thumbnail: image(size: thumbnail) {
+        url
+        width
+        height
+      }
+    }
+    achievement
+    customData
+    pagesDone
+    pagesGoal
+    challengeType
+    specificUsername
+    user {
+      id
+      webcamUrl
+      username
+    }
+    edition {
+      id
+      year
+      beginDate
+      endDate
+      status {
+        usersCanUpload
+      }
+      useTitles
+    }
+    allowComments
+    allowReactions
+    disclaimer
+  }
+}
+
+fragment ParticipationDesktopReaderData on Participation {
+  id
+  challengeType
+  pages {
+    url
+  }
+}
+
+query ParticipationMobilePage($participationId: ID!) {
+  participation(id: $participationId) {
+    id
+    title
+    pages {
+      url
+      width
+      height
+    }
+    achievement
+    customData
+    pagesDone
+    pagesGoal
+    challengeType
+    user {
+      id
+      username
+    }
+    edition {
+      id
+      useTitles
+    }
+    specificUsername
+    comments {
+      id
+    }
+    reactions {
+      id
+    }
+    allowComments
+    allowReactions
+  }
+}

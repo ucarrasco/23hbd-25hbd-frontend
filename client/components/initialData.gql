@@ -1,0 +1,46 @@
+query InitialData {
+  me {
+    ...InitialUserData
+  }
+  currentEdition {
+    id
+    year
+    beginDate
+    endDate
+    customData
+    theme
+  }
+  incomingEdition {
+    id
+    year
+    beginDate
+    endDate
+    status {
+      usersCanRegister
+      teaserEnabled
+      timerEnabled
+    }
+  }
+}
+
+fragment InitialUserData on User {
+  id
+  slug
+  username
+  isAdmin
+  readStatuses {
+    id
+    participation {
+      id
+    }
+    lastPageNumberRead
+  }
+  followedUsers {
+    id
+  }
+  preferences {
+    language
+    showFollowedParticipations
+    showReadStatuses
+  }
+}

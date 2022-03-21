@@ -1,0 +1,267 @@
+global:
+  'yes': Si
+  'no': 'No'
+  sign-in: Acceder
+  register: Regístrate
+  my-account: Mi cuenta
+  log-out: Desconectar
+  username: Apodo
+  email: Correo electrónico
+  birth-date: Fecha de nacimiento
+  country: Pais
+  age: Edad
+  description: Descripción
+  submit: Enviar
+  edit: Modificar
+  delete: Suprimir
+  cancel: Cancelar
+  save: Registrar
+  invalid-birth-date: Fecha de nacimiento inválida
+  invalid-email: E-mail inválida
+  invalid-username: Usario inválido
+  cover-page: Portada
+  server-error: Error del servidor
+  challenge-type:
+    classico: Clásico
+    turbomedia: Turbomedia
+  planche-upload:
+    instructions-20200321:
+      file-type:
+        classico: '<strong>Archivos autorizados  :</strong> <strong>.jpg</strong>, <strong>.png</strong> o <strong>.gif</strong> no superen <strong>1 Mo (2 Mo pour les gifs)</strong>'
+        turbomedia: '<strong>Archivos autorizados :</strong> <strong>.jpg</strong>, <strong>.png</strong> ou <strong>.gif</strong> no superen <strong>1 Mo (2 Mo pour les gifs)</strong>'
+      image-dimensions:
+        classico: '<strong>Tamaño de las imágenes :</strong> <strong>800×600</strong> (formato horizontal) o <strong>600×800</strong> (formato vertical)'
+        turbomedia: '<strong>Tamaño de las imágenes :</strong> <strong>700×525</strong> (formato horizontal) o <strong>525×700</strong> (formato vertical)'
+sign-in-page:
+  username:
+    label: Apodo
+  password:
+    label: Contraseña
+  submit: Acceder
+  forgot-password:
+    title: Contraseña olvidada
+    instructions: 'No te preocupes, entre tu correo y recibirás uno nuevo'
+    submit: Enviar
+account-page:
+  menu:
+    profile: Perfil
+    planches: Páginas
+    comments: Comentarios
+  profile-page:
+    avatar:
+      title: Avatar
+      img-alt: 'Imagen de perfil de {{username}}'
+      edit: $t(global.edit)
+      modal:
+        title: Cambiar tu avatar
+        instructions-20200322: Imagen en jpg inferior a 200ko y no superior a 135x135px.
+        delete: $t(global.delete)
+        cancel: $t(global.cancel)
+        submit: Enviar
+        done: Avatar modificado!
+        delete-done: Avatar eliminado
+        validation-20200322:
+          invalid-image: Imagen no válida
+          invalid-file-type: La imagen debe estar en formato jpg
+          invalid-image-dimensions: La imagen no deberá superar los 135x135px
+          invalid-file-size: La imagen no deberá superar los 200ko
+    username:
+      title: Apodo
+      edit: Cambia
+      modal:
+        title: Neuvo apodo
+        instructions: 'Cuidado, si cambias de apodo, el actual estará disponible para otras personas.'
+        cancel: Cancelar
+        submit: Enviar
+        done: Apodo modificado
+    password:
+      title: Cambiar la contraseña
+      modal:
+        title: Nueva contraseña
+        instructions: Mínimo 6 caracteres
+        done: Contraseña modificada!
+    links:
+      title: Enlaces
+      empty: No enlaces todavia
+      add-link: Añadir un enlace
+      reorder-done: Orden de los enlaces registra
+      delete-done: Suprimir el enlace
+      modal:
+        title: Nuevo enlace
+        link-title:
+          label: Título
+        link-url:
+          label: URL
+        cancel: Cancelar
+        submit: Añadir
+        done: Enlace añadido
+    infos:
+      email:
+        label: E-mail
+      birth-date:
+        label: Fecha de nacimiento
+      country:
+        label: Pais
+      description:
+        label: Descripción
+      submit: Guardar
+      done: Informaciones actualizadas.
+    subscribe-to-edition:
+      title: 'Edición {{year}}'
+      submit: 'Registrarse a la edición {{year}}'
+      done: Registro ok
+    participation:
+      title: 'Edición {{year}}'
+      team:
+        label: Participo
+        without-team:
+          label: Solo
+        with-team:
+          label: En equipo
+      gathering:
+        label: Agrupación
+        in-gathering:
+          label: $t(global.yes)
+        no-gathering:
+          label: $t(global.no)
+      teamates:
+        label: Miembros del equipo
+      gathering-name:
+        label: Nombre del grupo
+      town:
+        label: Ciudad
+      done: Informaciones de participación actualizadas
+  comments-page:
+    allow-comment:
+      label: Permitir comentarios
+      'on': $t(global.yes)
+      'off': $t(global.no)
+    enable-email-notifications:
+      label: Ser notificado por correo electrónico sobre nuevos comentarios
+      'on': $t(global.yes)
+      'off': $t(global.no)
+    done: Preferencias guardadas
+  planches-page:
+    lose-achievement-warning: '<0>Cuidado!</0> Se acabó el tiempo, si realiza cambios ahora, perderá {{yourAchievement}} !'
+    upload-not-possible-yet: La descarga de comic aún no es posible
+    upload-not-possible-anymore: La carga de dibujo ya no es posible para esta edición.
+    reorder-mode:
+      start: Cambiar orden
+      end: ✓ Terminado
+      instructions: Mueve tus dibujos para reordenarlas
+      done: Orden de las cregistra
+    planche-delete-done: Página suprimida
+    planche-img-alt: 'Páginas {{number}}'
+    challenge-type:
+      label: Modo de participación
+      submit: $t(global.submit)
+      done: Modo de participación actualizado
+    current-challenge-type: Modo de participación
+    planche-upload:
+      submit: $t(global.submit)
+      done: Página cargada!
+      file-validation:
+        invalid-image: Imagen inválida
+participations-page:
+  info-bar:
+    user-info:
+      no-description: (sin descripción)
+    participants-count: Participantes
+  display-mode:
+    list: Lista
+    gallery: Galeria
+  completion-filter:
+    any: Todos los inscritos
+    non-empty: Todos los comics
+    full: Cómics terminados
+  user-search:
+    placeholder_short: Buscar
+    placeholder_long: Buscar por apodo
+    empty: Sin resultados
+    results-in-other-editions: Resultados en otras ediciones
+participation-page:
+  og-title: 'Participación de {{username}} - $t(flavored:global.event-name.short) {{year}}'
+  empty: No hay página para este cómic.
+  planches:
+    title: Paginas
+    lightbox-image-count-separator: sobre
+  author:
+    title: Autor
+    img-alt: 'Imagen de perfil de  {{username}}'
+    participations:
+      title: Participaciones
+    links:
+      title: Enlaces
+    other-participations:
+      edition-x: 'Edición {{year}}'
+  comments:
+    title: Comentario
+    add-comment:
+      submit: Deja un comentario
+      name:
+        label: Nombre
+      website:
+        label: Sitio
+      done: Comentario enviado
+blog-page:
+  posts-summary:
+    title: Todas las publicaciones
+register-page:
+  title_active-edition: 'Inscripción a los $t(flavored:global.event-name.long) {{year}}'
+  title_no-active-edition: Inscripción
+  all-good:
+    title: Todo esta bien
+    text: 'Se ha enviado un correo electrónico con su contraseña a la dirección {{email}}. Ve a ver!!'
+layout:
+  main-menu:
+    home: Pagina de inicio
+    rules: Reglas
+    gallery: Lee los comics
+    blog: Blog
+    fanarts: Fanarts
+    random-comic: Random
+    participations: Participaciones
+    participants: Participantes
+  timer:
+    next-edition-in: Próxima edición
+    begins-in: Empieza en
+    ends-in: Se acabará en
+    ended-since: Se acabó hace
+  social-links:
+    facebook: Nuestra pagina de facebook
+    twitter: Nuestra cuenta de Twitter
+    instagram: Nuestra cuenta de Instagram
+    discord: Nuestro servidor Discord
+feedback:
+  db-locked: 'Los cambios se desactivan temporalmente en el sitio, intente nuevamente en unos minutos !'
+  register:
+    email-already-exists: 'Una cuenta ya existe con el e-mail {{email}}'
+    username-already-exists: 'Nombre de usuario {{username}} ya está en uso'
+  reset-password:
+    found-no-account: 'No se encontró ninguna cuenta con el correo electrónico {{email}}'
+  sign-in:
+    user-not-found: 'La cuenta {{username}} no existe'
+    wrong-password: Contraseña incorrecta
+  add-page:
+    uploads-closed-on-edition: Enviar un dibujo ya no es posible para esta edición
+    invalid-file-type: 'Este tipo de archivo no está autorizado, formatos autorizados {{allowedFileTypes}}'
+    invalid-image-dimensions: 'El dibujo debe estar en uno de los siguientes formatos  : {{allowedImageDimensions}}'
+    invalid-file-size: 'El archivo es demasiado grande, máximo permitido : {{maximumFileSize}}'
+email:
+  register:
+    subject_active-edition: 'Inscripción a los $t(flavored:global.event-name.long) {{year}}'
+    subject_no-active-edition: 'Inscripción a los $t(flavored:global.event-name.long)'
+    text: |
+      Hola {{username}}!
+      Gracias por Inscripción a $t(flavored:global.event-name.long)!
+
+      Aquí esta tu contraseña: {{password}}
+
+      Ahora puedes conectarte al sitio :-)
+
+      (PS: Puede (y debería) cambiar su contraseña en el sitio en la sección "$t(global.my-account)" section)
+  reset-password:
+    subject: Restablecer contraseña
+    text: 'Aquí está tu nueva contraseña para la cuenta {{username}} : {{password}}'
+  new-comment-notification:
+    subject: 'Nuevo comentario {{authorName}} sobre tu cómic'

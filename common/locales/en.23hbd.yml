@@ -1,0 +1,157 @@
+global:
+  event-name:
+    short: 23hBD
+    long: 23h de la BD
+    extra-long: 23 heures de la BD (23-Hour Comics Day)
+  your-silver-achievement: your silver bunny
+  your-gold-achievement: your golden bunny
+  your-pink-achievement: your pink bunny
+home-page:
+  content: |
+    # 24 COMIC STRIPS PAGES IN 23 HOURS!
+
+    The *$t(flavored:global.event-name.extra-long)* is an online artistic marathon.
+    You have to create a 24 pages comic, given a theme and a constraint, within 23 hours.
+
+    Anyone can participate, regardless of their level or age.
+
+    No jury, but a counter. The fastest get a golden or a pink rabbit, latecomers a silver rabbit...
+
+    For more information, visit the [$t(layout.main-menu.rules)](/rules/) page.
+  day-before-content:
+    dates-info: The theme will show here at 1pm!! (french time)
+  before-content:
+    dates-info: 'The fifteenth edition of $t(flavored:global.event-name.short) will take place on Saturday 26th and Sunday 27th of March 2022 from 1pm to 1pm (french time)'
+  during-content:
+    theme-incoming: Theme is on the way..!
+  radio-carotte:
+    simple-link: 'This year, follow the $t(flavored:global.event-name.short) through our official stream, <1>Radio Carotte</1>!'
+rules-page:
+  content: |
+    # Rules
+
+    The **$t(flavored:global.event-name.extra-long)**  is a drawn marathon where everyone has to create a 24-page comic strip, on an imposed theme, for 23 consecutive hours over a weekend. Each year, hundreds of professional and amateur authors around the world attempt this challenge on daylight saving time, the only day of 23 hours.
+
+    As a reminder, the event is **totally free** and managed by a great team of volunteers, the * "Bunny Squad" *.
+
+    ## WHO CAN PARTICIPATE?
+
+    The $t(flavored:global.event-name.short) is open to everyone: you can be a minor or an adult, a professional or an amateur, it doesn't matter, everyone is welcome!
+
+    **All you have to do is register on the site** and make yourself available on **{{beginDate, dddd D, 1}} and {{endDate, dddd D MMMM YYYY, 2}} from {{beginDate, HH:ss, 1}} to {{endDate, HH:ss, 2}}** (french time). At least.
+
+    ## HOW TO PARTICIPATE ?
+
+    In the exceptional context of this edition, your workshop, your office, your room or any other place from where you can connect to the 23hbd.com site will be quite sufficient once you have registered individually.
+
+    You can obviously participate as a team, online, or with people who are already under the same roof!
+
+    ## HOW TO GATHER?
+
+    The current context limits physical regroupings. That does not prevent you from finding people online, if your friends are not available, join us in the burrow on our server [Discord](https://discord.gg/8xK3FVZ) or in the [Facebook group's burrow](https:%20//www.facebook.com/groups/terrier23hbd), the team and the other participants will be able to support you and help you out :)
+
+    And if you stream, do not hesitate to paste the link of your live in your participant profile so that the readers can encourage and support you.
+
+    ## THE "CLASSICO" CHALLENGE
+
+    You must create an original 24-page comic strip (1 cover + 23 pages, the last or back cover / page of credits included) in 23 consecutive hours: script, illustrations, lettering, colors (be careful, the color remains ambitious given the time ) ...
+
+    All types of work are accepted: black and white drawing, color, collages, photographic montages, photo novels, puppets, as long as this little world bubbles! The important thing is to have fun and fully experience these 23 hours :)
+
+    To make sure you make the most of your time, plan ahead for this long weekend by preparing your burrow: stock up on equipment, drinks, food, music and whatever else you may need. And also plan for breaks and rest times by organizing yourself. This is not a sprint but a marathon!
+
+    On Saturday at 1:00 p.m. (Metropolitan French time, GMT +1), the theme and the constraint are revealed on the site, on the FB page, on Discord, on Twitter, everywhere. And the countdown will be triggered! You will have until 1:00 p.m. the next day (well, then, GMT +2) to try to meet the challenge, publish your story on the site and get a Golden Rabbit. Those who dare to double the challenge and write a 48-page story will be rewarded with a Pink Rabbit, the show-off rabbit.
+
+    Attention, ANY CORRECTION of your pages AFTER THE END of the stopwatch results in the LOSS OF THE GOLDEN RABBIT. It is a security that prevents any cheating. That being said, in case of error contact us on a network, we do not bite. Except the carrots. Aaaah a very crunchy little carrot ...
+
+    If you don't finish on time, don't panic: the counter is stopped but you have the possibility to finish your story the following days and get a Silver Rabbit, because the most important thing is to finish your comic.
+    And a Silver Rabbit is an honorable rabbit!
+
+    To be published on the site, your pages can be in landscape or portrait format. However, it is advisable to prefer the landscape format, which is easier to read everywhere.
+
+    **Pay attention to the imposed formats:**
+
+    -   {{planchesUploadInstructions.fileType.classico}}
+    -   {{planchesUploadInstructions.imageDimensions.classico}}
+
+    Do not hesitate to do a few tests to be sure you can master this format on D-Day. Especially if you draw on paper and you have to scan and resize your pages for publication.
+
+    **Precision for lazy people;) we can see you:**
+    The “Classico” challenge is a comic strip marathon, no thumbnails!
+    **Each page must therefore contain at least 2 boxes**. An exception of 3 full pages (in addition to the cover) is allowed for stories of 24 pages. So you need to make a 24-page booklet (1 cover + 23 comic pages) of which 3 pages can be full pages (or double for show-offs who want to make 48).
+    **Tip: if you want to create thumbnail comics, try Turbomedia.**
+
+    ## THE "TURBOMEDIA" VARIATION
+
+    The Turbomedia is older than the webtoon and it is HORIZONTAL. But it was born from the same principle: it is a comic book format specifically created to be read on screen.
+
+    If you don't know, don't fall asleep stupid tonight without having read this page: https://turbointeractive.fr/faq/
+    If you want to dig into the subject, there is this portal: https://turbointeractive.fr
+
+    Regarding the challenge, it's the same, with a few details ...
+    As the ways of telling are different, we no longer count in terms of “pages”, but in terms of “screens”.
+    It is therefore a matter of creating in 23 hours an original comic strip of 80 screens (1 cover + 79 screens) to obtain a Golden Rabbit, or 160 screens to win the Pink Rabbit. The Silver Rabbit will always be awarded to those who have published a complete work after the end of the stopwatch.
+    In this variant, each screen can be just a drawing, classic or animated, equivalent to a classic comic book box.
+
+    **The format remains imposed. It is slightly different.**
+    -   {{planchesUploadInstructions.fileType.turbomedia}}
+    -   {{planchesUploadInstructions.imageDimensions.turbomedia}}
+
+    Do not hesitate to do a few tests to be sure to be able to master this format on D-day.
+
+    ## NEW: THE "WEBTOON" VARIATION
+    The webtoon format is finally here!
+    If you don't know about webtoon, you can read a quick description on Wikipedia:
+    > Webtoons are a type of digital comic that originated in South Korea. While webtoons were mostly unknown outside of the country during their inception, there has been a surge in popularity internationally thanks in great part to most manhwa being read on smartphones.
+
+    You can have a glance at some webtoon comics here [https://www.webtoons.com/](https://www.webtoons.com/).
+
+    There are no "pages" in webtoons since this format is read as one long vertical image, that being said, you know that we LOVE to give **QUANTIFIABLE** goals.
+
+    - To get your Golden Rabbit you'll have to provide 48 image files (portrait orientation) which will be concatenated vertically to make your webtoon comic
+    - For the Pink Rabbit you'll have to provide the double: 96 image files
+    - Given the nature of webtoon, you don't need to make a "cover page" of your comic
+
+    About the "image files", here are the specifications:
+
+    - {{planchesUploadInstructions.fileType.webtoon}}
+    - {{planchesUploadInstructions.imageDimensions.webtoon}}
+
+    Now put on your bunny costume ...
+    You are now ready to experience a great $t(flavored:global.event-name.short) marathon!
+contact-page:
+  title: Contact
+  content: |
+    **You want to reach the Boss:**
+    Turalo : [turalo@23hbd.com](mailto:turalo@23hbd.com)
+
+    **You are journalist:**
+    Zia : [zia@23hbd.com](mailto:zia@23hbd.com)
+
+    **You need help and informations to organize a gathering in your school, studio, library:**
+    Zia : [zia@23hbd.com](mailto:zia@23hbd.com)
+
+    **You are having an issue with the website:**
+    Ugo / Ydrioss : [dev@23hbd.com](mailto:dev@23hbd.com)
+
+
+    **General email for you to spam us:**
+    [mail@23hbd.com](mailto:mail@23hbd.com)
+
+    --------------------------
+
+    **You can also reach the team on:**
+
+    **Facebook:**
+    [http://www.facebook.com/23heuresdelaBD](http://www.facebook.com/23heuresdelaBD)
+
+    **Twitter:**
+    [https://twitter.com/23HBD](https://twitter.com/23HBD)
+
+    **Instagram:**
+    [https://twitter.com/23HBD](https://twitter.com/23HBD)
+
+account-page:
+  planches-page:
+    title-edit:
+      label: Title of the comic

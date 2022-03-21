@@ -1,0 +1,16 @@
+@import '~styles/variables';
+
+#sign-in {
+  border: solid 1px #bbb;
+  border-radius: 4px;
+  padding: 15px 40px;
+  color: $alt;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+#forgotten-password-area {
+  .reset-password-instructions {
+    font-size: 0.8rem;
+  }
+}

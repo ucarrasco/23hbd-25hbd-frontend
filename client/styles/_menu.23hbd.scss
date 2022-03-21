@@ -1,0 +1,74 @@
+@import 'mixins';
+
+nav#main-nav {
+  padding: 2px 10px;
+  position: relative;
+  @include media-breakpoint-up(sm) {
+    border-radius: 5px;
+  }
+  box-shadow: 2px 12px 1px -7px #00000026;
+}
+
+#main-menu {
+  $text-color: white;
+  $separator-color: $text-color;
+  $border-color: $text-color;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px #00000033;
+  font-weight: 700;
+  color: $text-color;
+  line-height: 1.25em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+
+  > li {
+    height: 48px;
+    margin: 0;
+    padding: 0 0 0 0em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    $hover-transition-duration: 0.15s;
+    $hover-transition-smoothness: linear;
+
+    + li {
+      &::before {
+        content: "•";
+        font-size: 0.8em;
+        color: $separator-color;
+        // content: "";
+        // height: 1.2em;
+        // width: 2px;
+        // background-color: #ccc;
+        // display: inline-block;
+      }
+    }
+
+    > a {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0.5em;
+      border-bottom: 0px solid $border-color;
+      transition: border-bottom-width $hover-transition-duration $hover-transition-smoothness;
+      > * {
+        position: relative;
+        top: 0px;
+        transition: top $hover-transition-duration $hover-transition-smoothness;
+      }
+    }
+
+    &:hover {
+      > a {
+        border-bottom-width: 4px;
+        > * {
+          top: -4px;
+        }
+      }
+    }
+  }
+}
+

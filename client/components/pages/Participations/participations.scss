@@ -1,0 +1,240 @@
+@import '~styles/variables';
+@import '~styles/mixins';
+
+/**
+  * AUTBAR...................Où on s'occupe de la barre qui colle au-dessus
+  * LISTE....................Où on style la liste des participants (c'est important)
+  */
+
+
+
+
+/*------------------------------------*\
+    $AUTBAR
+\*------------------------------------*/
+
+.hbd-autbar {
+  margin-left: -1.5rem;
+  margin-top: -1.5rem;
+  margin-right: -1.5rem;
+
+  &__sticky-content {
+    box-shadow: 1px 3px 2px #aaa;
+    @if ($flavor == 25hbd) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    background-color: var(--content-container-bg-color);
+  }
+
+  &__avatar, &__descript {display: none;}
+  &__avatar {background-size: cover;}
+
+  &__editions {
+    $border-color: #bbb;
+    $border: solid 1px #bbb;
+    margin-left: -24px;
+    margin-right: -24px;
+    body.ie & {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    overflow: auto;
+    background: $gray-150;
+    border-top: $border;
+    padding: 0;
+
+
+    li {
+      flex: 1;
+      display: block;
+      max-width: 100px;
+      border-bottom: $border;
+      > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        color: #999;
+        padding: 5px 10px;
+        &:hover { text-decoration: none; }
+        &.active {
+          background: $primary;
+          color: white;
+          text-shadow: 0px 2px 1px #00000045;
+          @if ($flavor == 25hbd) {
+            background: #607863;
+          }
+        }
+      }
+      + li {
+        border-left: $border;
+      }
+      &:last-child {
+        border-right: $border;
+      }
+      &:first-child {
+        border-left: $border;
+      }
+    }
+    a {
+      color: $gray-700;
+      font-weight: 700;
+    }
+    .active a {background-color: white;color: $primary;}
+    &-bottom-border-hack {
+      height: 0;
+      margin: 0 -1.5rem;
+      > * {
+        border-top: $border;
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
+
+  &__theme {
+    max-height: 135px;
+    overflow-y: auto;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__avatar, &__descript {
+      display: block;
+      height: 100px;
+    }
+    &__avatar {
+      width: 100px;
+      min-width: 100px;
+    }
+    &__descript {
+      width: 50%;
+      overflow: hidden;
+      line-height: 1.3;
+    }
+    &__theme {width: 25%;}
+  }
+}
+
+
+/*------------------------------------*\
+    $LISTE
+\*------------------------------------*/
+
+.participations-grid {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  @include media-breakpoint-up(sm) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include media-breakpoint-up(xl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.read-status {
+  color: black;
+
+  &.read, &.empty {
+    color: #969696;
+  }
+
+  &.empty.empty-is-mainstream {
+    color: var(--text-color);
+  }
+
+  &.unread {
+    color: black;
+  }
+
+  &.partially-read {
+    color: #864565;
+  }
+}
+
+.group-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  color: #969696;
+  &.group-togglable {
+    cursor: pointer;
+  }
+  .group-action {
+    opacity: 0;
+    cursor: pointer;
+  }
+  &:hover {
+    .group-action {
+      opacity: 0.5;
+    }
+  }
+  .group-edit {
+    margin-left: 6px;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  @media (pointer: coarse) {
+    .group-action {
+      opacity: 0.5;
+    }
+  }
+}
+
+.followed-group {
+  // border: solid 1px #00000014;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.columns-layout {
+  .columns-layout-col {
+    flex: 1 0 0;
+  }
+
+  &:not(.bordered) .columns-layout-col + .columns-layout-col {
+    border-left: solid 1px rgba(black, 0.06);
+  }
+}
+
+
+.hbd-participant {
+  height: 38px;
+  display: flex;
+  align-items: center;
+
+  &__pseudo {
+    flex-grow: 1;
+  }
+
+  &__pages {
+    width: 3.5em;
+    text-align: right;
+  }
+
+  @media (pointer: fine) {
+    a.link-unstyled:hover {
+      color: #e0a519;
+    }
+  }
+
+  padding: 0 1em;
+}

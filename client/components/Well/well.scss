@@ -1,0 +1,51 @@
+@import '~styles/variables';
+
+.hbd-well {
+  border: solid 1px $alt;
+  border-top: none;
+  border-radius: 4px;
+  margin: 20px 0 50px;
+
+  &-top {
+    display: flex;
+    &::before, &::after {
+      content: '';
+      border-top: solid 1px $alt;
+      flex: 1;
+      display: block;
+    }
+
+    &-title-start {
+      &::before {
+        flex-grow: 0;
+        flex-basis: 22px;
+      }
+    }
+
+    .hbd-well-title {
+      font-size: 1.2rem;
+      padding: 0px 0.3em;
+      color: $alt;
+    }
+  }
+
+  &-transclude-content {
+    padding: 20px;
+  }
+
+  &-alt {
+    .hbd-well-top::before { flex-grow: 0; flex-basis: 22px; }
+
+    border-color: #bbb;
+    .hbd-well-top::before, .hbd-well-top::after { border-color: #bbb; }
+    .hbd-well-title { color: #999; font-size: 1.4rem; }
+  }
+
+  &-ride-container {
+    height: 0;
+    overflow: visible;
+    > * {
+      transform: translate(0, -50%);
+    }
+  }
+}

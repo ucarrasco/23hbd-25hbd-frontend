@@ -1,0 +1,18 @@
+@import '~styles/variables';
+
+#register {
+  $padding-y: 0px;
+  border: solid 1px $primary;
+  border-radius: 4px;
+  padding: $padding-y 0;
+
+
+  .submit-container {
+    margin-bottom: -$padding-y;
+  }
+}
+
+.register-title {
+  color: $primary;
+  font-size: 1.3em;
+}

@@ -1,0 +1,100 @@
+global:
+  event-name:
+    short: 23hBD
+    extra-long: Le 23 Ore del Fumetto
+  your-silver-achievement: il tuo coniglio d'argento
+  your-gold-achievement: il tuo coniglio d'oro
+  your-pink-achievement: il tuo coniglio rosa
+home-page:
+  content: |
+    # 24 PAGINE DI FUMETTI IN 23 ORE!
+
+    Le *23 Ore del Fumetto* sono una maratona artistica. Bisogna creare un fumetto di 24 pagine, con un tema e una restrizione imposti, entro 23 ore.
+
+    Tutti possono partecipare, indipendentemente dal livello o dall'età.
+
+    Non c'è giuria, ma un cronometro. I più rapidi vincono un coniglio d'oro o un coniglio rosa, i ritardatari un coniglio d'argento...
+  before-content:
+    dates-info: 'La quindicesima edizione delle 23hBD avrà luogo sabato 26 e domenica 27 marzo 2022 dalle 13:00 alle 13:00'
+rules-page:
+  content: |
+    # Regolamento
+
+    Le 23 Ore del Fumetto sono una maratona di fumetti in cui ogni persona deve creare un fumetto di 24 pagine su un tema prestabilito per 23 ore consecutive durante un fine settimana. Ogni anno, centinaia di autori professionisti e amatoriali di tutto il mondo tentano questa sfida il giorno del passaggio all'ora legale, l'unico giorno che è di sole 23 ore.
+
+    L'evento è TOTALMENTE GRATUITO e gestito da un grande equipe di volontari.
+
+    ## CHI PUÒ PARTECIPARE?
+
+    Le $t(flavored:global.event-name.short) sono aperto a tutti: minorenni o maggiorenni, professionisti o amatori, studenti o disoccupati, femine o maschi o entrambi!
+
+    È suficente registrarsi sul sito e rendersi disponibili il **{{beginDate, dddd D, 1}} e la {{endDate, dddd D MMMM YYYY, 2}} dalle {{beginDate, HH:ss, 1}} alle {{endDate, HH:ss, 2}}** (ora francese).
+
+    ## COME PARTECIPARE?
+
+    Il modo migliore per partecipare è di trovare un luogo di incontro con gli altri partecipanti vicino a te (o lontano se ti piace viaggiare).
+
+    Ma se non riesci a trovarne uno, il tuo laboratorio, il tuo ufficio, la tua camera da letto o qualsiasi altro posto da cui tu possa collegarti al sito 23HBD.com andrà bene una volta che ti sarai registrato individualmente.
+
+    Oppure organizzi te stesso un gruppo!
+
+    ## COME RAGGIUNGERE?
+    Come abbiamo capito, il contesto attuale limita i raggruppamenti fisici. Questo non ti impedisce di trovare persone online, se i tuoi amici non sono disponibili, unisciti a noi sul nostro server Discord, siamo gentili;)
+
+    E se hai una webcam, non esitare a collegarla cosi che i lettori possano incoraggiarti o sostenerti se hai un viso affatigato e gli occhi ti si stanno per chiudere.
+
+    ## LA SFIDA "CLASSICA"
+
+    Crea un fumetto originale di 24 pagine (1 copertina + 23 pagine) in 23 ore consecutive: sceneggiatura, illustrazioni, testo, colori (se hai coraggio)...
+
+    Sono accettati tutti i tipi di lavori: disegni in bianco e nero, a colori, collage, montaggi fotografici o stampe ritagliate con le patate. L'importante è divertirsi e vivere al massimo queste 23 ore!
+
+    Per assicurarvi di sfruttare al meglio il vostro tempo, anticipate questa lunga giornata preparando la vostra tana: fate scorta di attrezzature, bevande, cibo, musica e tutto ciò di cui potreste aver bisogno. E se necessario, pianificate un po' di tempo di riposo organizzando al meglio il vostro tempo di lavoro: non è una gara di velocità ma una maratona!
+
+    Sabato alle 13:00 (GMT +1), il tema e la restrizione vengono svelati sul sito, sulla pagina FB e su Twitter, e il conto alla rovescia inizia! Hai fino al giorno successivo alle ore 13:00 (sempre GMT +1, eh!) per racogliere la sfida, pubblicare la vostra storia sul sito e ottenere un Coniglio d'Oro. I più temerari che oseranno raddoppiare la sfida e completare una storia di 48 pagine saranno premiati con un Coniglio Rosa, un premio eccezionale per i più audaci.
+
+    Attenzione, QUALSIASI CORREZIONE delle tue pagine DOPO LA FINE DEL TEMPO comporterà la PERDITA DEL CONIGLIO D'ORO.
+
+    Se non finisci in tempo, non farti prendere dal panico: il contatore si ferma ma hai la possibilità di finire la tua storia e ottenere un Coniglio d'Argento, la cosa più interessante è fare il fumetto fino alla fine. E un coniglio d'argento è già un buon risultato!
+
+    Per essere pubblicate sul sito, le tue pagine possono essere in formato orizzontale o verticale.
+
+    Ma un piccolo suggerimento: un formato orizzontale è più facile da leggere su uno schermo.
+
+    Il formato imposto :
+
+    - {{planchesUploadInstructions.fileType.classico}}
+    - {{planchesUploadInstructions.imageDimensions.classico}}
+
+    Puoi fare qualche prova per essere sicuro di poter padroneggiare questo formato durante il giorno prestabilito.
+
+    Non dimenticare che la sfida "Classica" è una maratona di tavole a fumetti, non di vignette: ogni pagina deve quindi contenere almeno 2 caselle! Verrano accetate massimo 3 pagine con una sola casella (oltre alla copertina) all'interno delle storie di 24 pagine (ci piace una pagina intera di tanto in tanto). Dunque bisogna realizare un libretto di 24 pagine (1 copertina + 23 pagine di fumetti o il doppio per i pazzi che vogliono farne 48!) di cui 3 pagine possono essere pagine con una sola casella.
+
+    Se vuoi creare delle vignette, usa :
+
+    ## LA VARIANTE "TURBOMEDIA"
+
+    Esiste un formato di fumetto creato appositamente per essere letto sullo schermo: il Turbomedia.
+
+    Se non lo conosci, non andare a dormire stanotte senza aver letto questa pagina: https://turbointeractive.fr/faq/
+
+    Se volete andare più a fondo, c'è questo portale: https://turbointeractive.fr/.
+
+    Quindi, per quanto riguarda la sfida, è la stessa, tranne qualche dettaglio.....
+
+    Siccome il modo di raccontare le storie è diverso, non contiamo più in termini di numero di "pagine", ma di numero di "schermi".
+
+    L'idea è quella di creare in 23 ore un fumetto originale di 80 schermi (1 copertina + 79 schermi) per ottenere un Coniglio d'Oro, o 160 schermi per ottenere il Coniglio Rosa. Il Coniglio d'Argento verrà assegnato sempre a chi avrà pubblicato un Turbomedia completo dopo la scadenza del termine.
+
+    In questa variante, ogni schermo può essere giusto un disegno classico o un disegno animato, equivalente a una casella classica di fumetti.
+
+    Il formato imposto :
+
+    - {{planchesUploadInstructions.fileType.turbomedia}}
+    - {{planchesUploadInstructions.imageDimensions.turbomedia}}
+
+    Puoi fare qualche prova per essere sicuro di poter padroneggiare questo formato durante il giorno prestabilito.
+
+    Ora, mettiti il costume da coniglio...
+
+    Ecco fatto, sei pronto per delle grandi 23HBD!

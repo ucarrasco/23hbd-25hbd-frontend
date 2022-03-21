@@ -1,0 +1,6 @@
+query EditionParticipationsCount($editionId: ID!) {
+  edition(id: $editionId) {
+    id
+    participationsCount
+  }
+}

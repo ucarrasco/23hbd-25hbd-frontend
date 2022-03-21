@@ -1,0 +1,65 @@
+@import './mixins';
+@import 'variables';
+
+.btn-xs {
+  padding: 0.0rem 0.5rem;
+  font-size: 0.76562rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+@if ($flavor == 23hbd) {
+  .btn-hbd {
+    @include button-variant($primary, transparent);
+    border-radius: 3px;
+  }
+}
+@else {
+  .btn-hbd {
+    @include button-variant($secondary, transparent);
+  }
+}
+
+// .logout-button {
+//   @extend .btn-hbd;
+//   filter: brightness(6.2);
+// }
+
+.btn-outline-hbd {
+  @include button-outline-variant-hbd($alt);
+}
+
+.btn-light {
+  @include button-variant($gray-150, $gray-150);
+}
+
+.btn-outline-light {
+  @include button-outline-variant($gray-500, $gray-500);
+  color: $gray-600;
+}
+
+.btn-completion-filter {
+  @include button-outline-variant($gray-600, $gray-600, transparent);
+  border-color: $gray-400;
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: $gray-600;
+    background-color: $gray-300; // #e3e4e4
+    border-color: $gray-400;
+  }
+  @include hover {
+    border-color: $gray-400;
+  }
+}
+
+.btn-collapsed-menu-toggle.dropdown-toggle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.25em;
+  color: inherit;
+  &:hover, &:active, &:focus {
+    text-decoration: inherit;
+    color: inherit;
+  }
+}

@@ -1,0 +1,109 @@
+#import '../Participation/operations.gql'
+
+query Edition($year: Int) {
+  edition(year: $year) {
+    id
+    year
+    useTitles
+    beginDate
+    endDate
+  }
+}
+
+query EditionIds{
+  editions {
+    id
+    year
+    beginDate
+    endDate
+  }
+}
+
+
+query EditionParticipations($editionId: ID!) {
+  edition(id: $editionId) {
+    id
+    participations {
+      id
+      title
+      user {
+        id
+        username
+        webcamUrl
+        slug
+      }
+      specificUsername
+      edition {
+        id
+        year
+      }
+      pagesDone
+      pagesGoal
+      achievement
+      firstPage {
+        thumbnail: image(size: thumbnail) {
+          url
+          width
+          height
+        }
+      }
+    }
+  }
+}
+
+query EditionParticipationsCount($editionId: ID!) {
+  edition(id: $editionId) {
+    id
+    participationsCount
+  }
+}
+
+query EditionThemeAndParticipationsCount($year: Int) {
+  edition(year: $year) {
+    id
+    theme
+    participationsCount
+  }
+}
+
+query SearchUser($search: String!) {
+  searchUser(search: $search) {
+    id
+    edition {
+      id
+      year
+    }
+    user {
+      id
+      username
+      webcamUrl
+      slug
+    }
+    specificUsername
+    pagesDone
+    pagesGoal
+    achievement
+    firstPage {
+      thumbnail: image(size: thumbnail) {
+        url
+        width
+        height
+      }
+    }
+  }
+}
+
+query ParticipationDesktopQuickOpen($participationId: ID!) {
+  participation(id: $participationId) {  
+    id
+    user {
+      id
+      slug
+    }
+    edition {
+      id
+      year
+    }
+    ...ParticipationDesktopReaderData
+  }
+}

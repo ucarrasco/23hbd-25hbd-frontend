@@ -1,0 +1,13 @@
+@import '~styles/variables';
+
+.achievement {
+  &-none {fill: transparent;}
+  &-gold {fill: $golden-bunny;}
+  &-silver {
+    fill: $silver-bunny;
+    &.achievement-silver-alt {
+      fill: $silver-bunny-alt;
+    }
+  }
+  &-pink {fill: $double-challenge-bunny;}
+}

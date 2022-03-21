@@ -1,0 +1,383 @@
+global:
+  'yes': 'Yes'
+  'no': 'No'
+  sign-in: Sign in
+  register: Sign up
+  my-account: My account
+  log-out: Sign out
+  username: Username
+  email: E-mail
+  birth-date: Birth date
+  country: Country
+  webcam: Stream
+  age: Age
+  description: Description
+  submit: Submit
+  edit: Edit
+  delete: Delete
+  cancel: Cancel
+  save: Save
+  invalid-birth-date: Invalid birth date
+  invalid-email: Invalid e-mail
+  invalid-username: Invalid username
+  cover-page: Cover page
+  server-error: 'Server error :-('
+  challenge-type:
+    classico: Classico
+    turbomedia: Turbomedia
+    webtoon: Webtoon
+  planche-upload:
+    instructions-20200321:
+      file-type:
+        classico: '<strong>Allowed files:</strong> <strong>.jpg</strong>, <strong>.png</strong> or <strong>.gif</strong> below <strong>1 MB (2 MB for gifs)</strong>'
+        turbomedia: '<strong>Allowed files:</strong> <strong>.jpg</strong>, <strong>.png</strong> or <strong>.gif</strong> below <strong>1 MB (2 MB for gifs)</strong>'
+        webtoon: '<strong>Allowed files:</strong> <strong>.jpg</strong>, <strong>.png</strong> or <strong>.gif</strong> below <strong>1 Mo (2 Mo for gifs)</strong>'
+      image-dimensions:
+        classico: '<strong>Image dimensions:</strong> <strong>800×600</strong> (landscape format) or <strong>600×800</strong> (portrait format)'
+        turbomedia: '<strong>Image dimensions:</strong> <strong>700×525</strong> (landscape format) or <strong>525×700</strong> (portrait format)'
+        webtoon: '<strong>Image dimensions:</strong> <strong>800×1280</strong> (portrait format)'
+  social:
+    facebook: Our Facebook page
+    twitter: Our Twitter account
+    instagram: Our Instagram account
+    discord: Our Discord server
+  read-interview: Read the interview
+  interview-coming-soon: Interview coming soon
+  download-edition-poster: Download the poster
+  download-here: Download here
+  by-author: By {{author}}
+sign-in-page:
+  username:
+    label: Username
+  password:
+    label: Password
+  submit: Sign in
+  forgot-password:
+    title: Forgot your password?
+    instructions: 'No worries, enter your email and you will receive a new one!'
+    submit: Send
+account-page:
+  menu:
+    profile: Profile
+    planches: Pages
+    comments: Comments
+  profile-page:
+    avatar:
+      title: Avatar
+      img-alt: '{{username}}''s profile pic'
+      edit: Change
+      modal:
+        title: Change avatar
+        instructions-20200322: jpg image below 200ko and 135x135px.
+        delete: $t(global.delete)
+        cancel: $t(global.cancel)
+        submit: Send
+        done: Avatar changed!
+        delete-done: Avatar deleted!
+        validation-20200322:
+          invalid-image: Invalid image
+          invalid-file-type: Image must be jpg
+          invalid-image-dimensions: Image dimensions must be below 135x135px
+          invalid-file-size: Image weight should not be over 200ko
+    username:
+      title: $t(global.username)
+      edit: Change
+      modal:
+        title: New username
+        instructions: 'Careful, if you chose a new username, the current one will be available for new users.'
+        cancel: $t(global.cancel)
+        submit: Send
+        done: Username changed!
+    password:
+      title: Change password
+      modal:
+        title: New password
+        instructions: 6 characters minimum
+        cancel: $t(global.cancel)
+        submit: $t(global.submit)
+        done: Password changed!
+    links:
+      title: Links
+      empty: No link yet
+      add-link: Add a link
+      reorder-done: Links order saved
+      delete-done: Link deleted
+      modal:
+        title: New link
+        link-title:
+          label: Title
+        link-url:
+          label: URL
+        cancel: $t(global.cancel)
+        submit: Add
+        done: Link added
+    infos:
+      email:
+        label: $t(global.email)
+      birth-date:
+        label: $t(global.birth-date)
+      country:
+        label: $t(global.country)
+      webcam:
+        label: Stream URL (twitch, etc)
+      description:
+        label: $t(global.description)
+      submit: $t(global.save)
+      done: User information updated
+    subscribe-to-edition:
+      title: '{{year}} edition'
+      submit: 'Register to the {{year}} edition'
+      done: You're in!
+    participation:
+      title: 'Edition {{year}}'
+      team:
+        label: I participate
+        without-team:
+          label: Alone
+        with-team:
+          label: In team
+      gathering:
+        label: Gathering
+        in-gathering:
+          label: $t(global.yes)
+        no-gathering:
+          label: $t(global.no)
+      teamates:
+        label: Teamates
+      gathering-name:
+        label: Meetup name
+      town:
+        label: City
+      submit: $t(global.save)
+      done: Participation information updated
+  comments-page:
+    allow-comment:
+      label: 'Allow comments on my comic:'
+      'on': $t(global.yes)
+      'off': $t(global.no)
+    enable-email-notifications:
+      label: 'Notify me by e-mail when someone comments my comic:'
+      'on': $t(global.yes)
+      'off': $t(global.no)
+    submit: $t(global.save)
+    done: Preferences updated
+  planches-page:
+    lose-achievement-warning: '<0>Caution!</0> Time''s up, I you make any change now, you''ll lose {{yourAchievement}}!'
+    upload-not-possible-yet: Page upload is not possible yet...
+    upload-not-possible-anymore: Uploads are closed for this edition.
+    reorder-mode:
+      start: Change order
+      end: ✓ Done
+      instructions: Drag and drop your pages to reorder them.
+      done: Pages order updated
+    planche-delete-done: Page deleted
+    planche-img-alt: 'Page {{number}}'
+    challenge-type:
+      label: 'Challenge type:'
+      submit: $t(global.submit)
+      done: Challenge type updated
+    current-challenge-type: 'Challenge type:'
+    planche-upload:
+      drag-n-drop-tip: You can also drop your files directly into this window to upload them :-)
+      submit: $t(global.submit)
+      done: Page uploaded!
+      file-validation:
+        invalid-image: Invalid image
+        invalid-file-type: 'File type {{fileType}} is not supported, valid file types are: {{allowedFileTypes}}'
+        invalid-image-dimensions: 'Image must be in one of the following dimensions: {{allowedImageDimensions}}, your image is {{imageDimensions}}.'
+        invalid-file-size: 'You file is too heavy ({{fileSize}}). Maximum file size is {{maxFileSize}}'
+    link-to-my-participation: 'Link to my participation:'
+    title-edit:
+      save: $t(global.save)
+      cancel: $t(global.cancel)
+      success: Title saved
+      errors:
+        max-characters: 😬 maximum {{max}} characters
+        emojis: 😬 Emojis not allowed in the title
+participations-page:
+  info-bar:
+    user-info:
+      no-description: (no description)
+    participants-count: Participants
+  display-mode:
+    list: List
+    gallery: Gallery
+  completion-filter:
+    any: All the registered
+    non-empty: All the comics
+    full: Comics finished
+  groups:
+    followed:
+      title: Followed
+      show: (show)
+      hide: (hide)
+      edit-done: ✓ Terminé
+      edit-instructions: Check the participants you want to follow
+    all:
+      title: All participants
+  user-search:
+    placeholder_short: Search...
+    placeholder_long: Search by username...
+    empty: (No result)
+    results-in-other-editions: Results in other editions
+  read-status-indicator:
+    label: Read indicators
+    tooltip:
+      unread: '<0>black</0>: unread'
+      partially-read: '<0>purple</0> : partially read'
+      read: '<0>gray</0> : read'
+participation-page:
+  og-title: '{{username}}''s participation - $t(flavored:global.event-name.short) {{year}}'
+  empty: "No page on this comic \U0001F62C"
+  empty-desktop: No page so far
+  planches:
+    title: Pages
+    lightbox-image-count-separator: of
+  author:
+    title: Author
+    img-alt: '{{username}}''s profile picture'
+    webcam: Live stream
+    age:
+      title: '$t(global.age):'
+    country:
+      title: '$t(global.country):'
+    description:
+      title: '$t(global.description):'
+    participations:
+      title: Participations
+    links:
+      title: Links
+    other-participations:
+      edition-x: '{{year}} edition'
+  comments:
+    title: Comments
+    add-comment:
+      submit: Leave a comment
+      submit-answer: Send answer
+      cancel-answer: '$t(global.cancel)'
+      name:
+        label: Name
+      email:
+        label: $t(global.email)
+      website:
+        label: Website
+      done: Comment sent
+    answer-cta: Answer
+    add-answer-cta: Add an answer
+  breadcrumb:
+    participations-page: "Participations of {{year}}"
+    participation-page: "{{username}}"
+blog-page:
+  posts-summary:
+    title: All the posts
+register-page:
+  title_active-edition: 'Sign in for $t(flavored:global.event-name.long) {{year}}'
+  title_no-active-edition: Sign in
+  username:
+    label: $t(global.username)
+  email:
+    label: $t(global.email)
+  birth-date:
+    label: $t(global.birth-date)
+  submit: $t(global.submit)
+  already-registered-tip: '<0><0>Note :</0> If you have participated in the past, you do not need to sign up again.</0><1><0>Sign in</0> to your existing account, and activate the {{year}} edition.</1>'
+  all-good:
+    title: All good!
+    text: 'An email with your password has been sent to {{email}}. Go and check it!'
+layout:
+  main-menu:
+    home: Home
+    rules: Rules
+    gallery: Read comics
+    blog: Blog
+    fanarts: Fanarts
+    random-comic: Random
+    participations: Participations
+    participants: Participants
+    sign-in: $t(layout.right-menu.sign-in)
+  right-menu:
+    sign-in: $t(global.sign-in)
+    register: $t(global.register)
+    my-account: $t(global.my-account)
+    log-out: $t(global.log-out)
+  timer:
+    next-edition-in: 'Next edition in:'
+    begins-in: 'It begins in:'
+    ends-in: 'It ends in:'
+    ended-since: 'It has ended for:'
+    days: '{{units}}d'
+    hours: '{{units}}h'
+    minutes: '{{units}}m'
+    seconds: '{{units}}s'
+  social-links:
+    facebook: $t(global.social.facebook)
+    twitter: $t(global.social.twitter)
+    instagram: $t(global.social.instagram)
+    discord: $t(global.social.discord)
+feedback:
+  db-locked: 'Editing is temporarilly disabled, please try again in a couple minutes'
+  register:
+    email-already-exists: 'There is already an existing account with the email {{email}}'
+    username-already-exists: 'The username {{username}} is already taken'
+    invalid-birth-date: $t(global.invalid-birth-date)
+    invalid-email: $t(global.invalid-email)
+    invalid-username: $t(global.invalid-username)
+  reset-password:
+    found-no-account: 'There is no account with the email {{email}}'
+  sign-in:
+    user-not-found: 'The user {{username}} does not exist'
+    wrong-password: Incorrect password
+  add-page:
+    uploads-closed-on-edition: You cannot upload pages for this edition anymore!
+    invalid-file-type: 'This file type is not authorized, authorized types: {{allowedFileTypes}}'
+    invalid-image-dimensions: 'The dimensions of the page must be the following: {{allowedImageDimensions}}'
+    invalid-file-size: 'The file is too big, maximum file size: {{maximumFileSize}}'
+  follow-status:
+    followed: followed!
+    unfollowed: unfollowed
+email:
+  register:
+    subject_active-edition: 'Sign up to $t(flavored:global.event-name.long) {{year}}'
+    subject_no-active-edition: 'Sign up to $t(flavored:global.event-name.long)'
+    text: |
+      Hi {{username}}!
+      Thanks for signing up to $t(flavored:global.event-name.long)!
+
+      This is your password: {{password}}
+
+      You can now sign in on the website :-)
+
+      (PS: You can (and should) change your password on the website, in the "$t(global.my-account)" section)
+  reset-password:
+    subject: Password reset
+    text: 'Here is your new password for the account {{username}}: {{password}}'
+  new-comment-notification:
+    subject: 'New comment from {{authorName}} on your comic'
+    text: |
+      Hi {{username}}!
+
+      Someone commented on your comic on the $t(flavored:global.event-name.short) {{year}}.
+      You can see it following this URL: {{participationAbsoluteUrl}}
+
+      =====================
+
+      {{authorName}} :
+
+      {{commentContent}}
+
+      =====================
+
+      If you don't want to receive these notifications, click this link: {{unsubscribeAbsoluteUrl}}
+      or go to the "$t(global.my-account)" section on the website : {{myAccountAbsoluteUrl}}
+    html: |
+      <div>Hi {{username}}!</div>
+      <p>Someone commented on your comic on the $t(flavored:global.event-name.short) {{year}}.</p>
+      <div style="margin-top: 20px; background: #f7f5f6; padding: 10px 20px; color: #4e4b4c; font-size: 1.1em;">
+        <div><b>{{authorName}}:</b></div>
+        <div style="margin-top: 5px"><i>{{commentContent}}</i></div>
+      </div>
+      <p style="margin-top: 20px">You can see it following this URL: <a href="{{participationAbsoluteUrl}}">{{participationAbsoluteUrl}}</a></p>
+      <div style="margin-top: 30px; font-size: 0.8em">
+      If you don't want to receive these notifications, <a href="{{unsubscribeAbsoluteUrl}}">click here</a><br/>
+      or go to <a href="{{myAccountAbsoluteUrl}}">$t(global.my-account)</a>
+      </div>

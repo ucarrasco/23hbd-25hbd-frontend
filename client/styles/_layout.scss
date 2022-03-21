@@ -1,0 +1,21 @@
+@import 'variables';
+
+@import 'menu.hbd';
+@import 'content-container.hbd';
+
+body {
+  color: #666;
+  --text-color: #666;
+}
+
+.container {
+  @include media-breakpoint-only(sm) {
+    max-width: calc(100% - 40px);
+  }
+}
+
+.popper-no-max-width {
+  max-width: initial;
+}
+
+@import 'layout.hbd';

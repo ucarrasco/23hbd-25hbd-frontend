@@ -1,0 +1,14 @@
+@import './variables';
+
+.achievement-text {
+  &-none {color: transparent;}
+  &-gold {color: $golden-bunny;}
+  &-silver {color: $silver-bunny;}
+  &-pink {color: $double-challenge-bunny;}
+}
+
+.badge {
+  &-gold { background-color: $golden-bunny; }
+  &-silver { background-color: $silver-bunny; }
+  &-pink { background-color: $double-challenge-bunny; }
+}

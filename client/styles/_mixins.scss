@@ -1,0 +1,115 @@
+@import './variables';
+@import '~bootstrap/scss/mixins';
+
+@mixin make-main-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      max-width: calc(#{$container-max-width} - 10px);
+    }
+  }
+}
+
+@mixin make-text-stroke($fill-color, $stroke-color) {
+  color: $fill-color;
+  text-shadow:  $stroke-color 1px 0px 0px,
+                $stroke-color 1px 1px 0px,
+                $stroke-color 1px -1px 0px,
+                $stroke-color -1px 1px 0px,
+                $stroke-color -1px 0px 0px,
+                $stroke-color -1px -1px 0px,
+                $stroke-color 0px 1px 0px,
+                $stroke-color 0px -1px 0px;
+}
+
+@mixin make-text-shadow($fill-color, $shadow-color) {
+  color: $fill-color;
+  text-shadow: 0px 0px 3px $shadow-color;
+}
+
+@mixin link-unstyled() {
+  &,
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: inherit;
+    outline: inherit;
+  }
+}
+
+@mixin button-variant-hbd($color) {
+  // @mixin button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%)) {
+  @include button-variant($color, $color, $color, $color, $color, $color);
+  border-radius: 3px;
+}
+
+@mixin button-outline-variant-hbd($color) {
+  // @mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
+  @include button-outline-variant($color, $color, rgba($color, 0), $color);
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: $color;
+  }
+}
+
+@mixin bg-img(
+  $src,
+  $src-height,
+  $src-width,
+  $dest-width,
+) {
+  background-image: $src;
+  width: $dest-width;
+  height: $src-height * $dest-width / $src-width;
+  background-size: #{$dest-width} auto;
+  background-repeat: no-repeat;
+}
+
+@function map-zip($list) {
+  $result: ();
+  @each $item-config in $list {
+    @each $property-name, $property-value in $item-config {
+      $result: map-merge(
+        $result,
+        ($property-name: append(map-get($result, $property-name) or (), $property-value, comma))
+      );
+    }
+  }
+  @return $result;
+}
+
+@mixin apply-map($properties-map) {
+  @each $property-name, $property-value in $properties-map {
+    #{$property-name}: #{$property-value};
+  }
+}
+
+@function paper-polygon($direction) {
+  $polygon-points: ();
+  @for $i from 0 to 81 { // important to finish on a odd number otherwise the polygon will be weird due to the path between initial and final points
+    $progress: $i * 20px;
+    $size: ($i % 2) * 100%;
+    $polygon-points: append($polygon-points, if($direction == vertical, $size $progress, $progress $size), comma);
+  }
+  @return $polygon-points;
+}
+
+@mixin paper-border($color, $direction: bottom) {
+  position: relative;
+  &:after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    -webkit-clip-path: polygon(paper-polygon(horizontal));
+    background-color: $color;
+    bottom: -2px;
+    z-index: 10;
+  }
+}

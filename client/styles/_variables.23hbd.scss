@@ -1,0 +1,38 @@
+$flavor: 23hbd;
+
+$pulp-paper: #f4e49c;
+$pulp-paper-dark: #eebb77;
+$pulp-title: #343480;
+$pulp-grass: #157751;
+$pulp-sky: #59cde9;
+$pulp-skin: #dc81b9;
+$pulp-skin-dark: #a793cc;
+$pulp-skin-darker: #7d7eac;
+$pulp-accent: #f14b6e;
+$pulp-mud: #c35f40;
+$pulp-accent-dark: #cf1f38;
+$pulp-female-rabbit: #88abd8;
+
+$primary: $pulp-title; // don't forget themeColor @ common/flavorConfig.23hbd.js
+$secondary: $pulp-skin-darker;
+$warning: $pulp-mud;
+$danger: $pulp-accent-dark;
+
+$alt: #383838;
+$toast-color: $primary;
+$toast-progress-color: black;
+
+$body-bg: $pulp-grass;
+$font-family-base: 'McLaren';
+$body-color: #1b1b1b;
+$link-color: $pulp-accent;
+
+$golden-bunny: #ffc800;
+$silver-bunny: #8a8a8a;
+$silver-bunny-alt: #e1e1e1; // used when background is already grey
+$double-challenge-bunny: #f98bc3;
+
+$logout-button: $secondary;
+
+
+

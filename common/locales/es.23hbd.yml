@@ -1,0 +1,98 @@
+global:
+  event-name:
+    short: 23hBD
+    long: 23h de la BD
+    extra-long: 23 heures de la BD (23h del cómic)
+  your-silver-achievement: Tu conejo de plata
+  your-gold-achievement: Tu conejo de oro
+  your-pink-achievement: Tu conejo rosa
+home-page:
+  content: |
+    # ¡ 24 páginas de tira cómica en 23 horas !
+
+    Las *23 horas del cómic* es un maratón artístico. Se debe crear una tira cómica (24 páginas) o una Turbomedia (80 miniaturas), con un tema y una restricción impuestos, dentro de las 23 horas.
+
+    Cualquier persona puede participar, independientemente de su nivel o edad.
+
+    Sin jurado, sino con un medidor de tiempo, los más rápidos ganan un conejo de oro o un conejo rosa, los rezagados un conejo de plata ...
+  before-content:
+    dates-info: 'Las 23 horas del cómic tendrán lugar el sábado 26 y domingo 27 de marzo, de 1pm a 1pm'
+rules-page:
+  content: |
+    # REGLAS
+
+    ‪Las 23 horas‬ del DA es un maratón dibujado donde todos deben crear una tira cómica de 24 páginas, sobre un tema impuesto, durante 23 horas consecutivas durante un fin de semana. Cada año, cientos de autores profesionales o aficionados de todo el mundo prueban este desafío el día del cambio al horario de verano, el único día que consta de solo 23 horas.
+
+    Como recordatorio, el evento es TOTALMENTE GRATUITO y está administrado por un equipo genial de voluntarios.
+
+    ## ¿QUIÉN PUEDE PARTICIPAR?
+
+    El 23h DA está abierto a todos ¡puedes ser menor o adulto, profesional o aficionado, estudiante o desempleado, una niña o un niño o ambos!
+
+    Solo tiene que registrarse en el sitio y estar disponible el **{{beginDate, dddd D, 1}} y el {{endDate, dddd D [de] MMMM [de] YYYY, 2}} de las {{beginDate, HH[h], 1}} a las {{endDate, HH[h], 2}}** (tiempo francés).
+
+    ## ¿CÓMO PARTICIPAR?
+
+    En el contexto excepcional de esta edición, su taller, su oficina, su dormitorio o cualquier otro lugar desde el que pueda conectarse al sitio 23hbd.com será suficiente una vez que se haya registrado individualmente.
+
+    ¡Obviamente puede participar en equipo, online o con personas que ya están bajo el mismo techo!
+
+    ## ¿CÓMO REUNIRSE?
+
+    Como hemos entendido, el contexto actual limita las agrupaciones físicas. Esto no evita que encuentra personas online, si sus amigos no están disponibles, únese a nosotros en nuestro servidor web Discord, somos amables ;)
+
+    Y si tiene una webcam, no dude en conectarla y darnos el enlace para que los lectores lo alienten o se quejen cuando vean su cara cansada y sus ojos désorbitados.
+
+    ## EL DESAFÍO "CLÁSICO"
+
+    Cree una tira cómica original de 24 páginas (1 portada + 23 páginas) en 23 horas consecutivas: guión, ilustraciones, letras, colores (si es valiente) ...
+
+    Se aceptan todo tipo de trabajos: dibujo en blanco y negro, color, collages, montajes fotográficos o sellos cortados en papas. ¡Lo importante es divertirse y vivir plenamente estas 23 horas!
+
+    Para asegurarse de aprovechar al máximo su tiempo, anticipe bien este largo día preparando su madriguera: aprovisionase de equipo, bebidas, comida, música y todo lo que necesite. Y también planifique un tiempo de descanso si es necesario organizando su tiempo de trabajo lo mejor posible: ¡esto no es una competencia de velocidad sino un maratón!
+
+    ‪El sábado a la 1:00 p.m.‬ (GMT +1), el tema y la restricción se revelan en el sitio, en la página de FB y en Twitter, ¡y la cuenta regresiva está en marcha! Tienes hasta ‪la 1:00 p.m.‬ del día siguiente (GMT +2, de repente) para tratar de aceptar el desafío, publicar tu historia en el sitio y obtener un Conejo de Oro. Los más atrevidos que se atrevan a duplicar el desafío y hacer una historia de 48 páginas serán recompensados con un conejo rosa, una recompensa excepcional para los más atrevidos.
+
+    Tenga en cuenta que CUALQUIER CORRECCIÓN de sus páginas DESPUÉS del final del lapso produce la PÉRDIDA DEL CONEJO DE ORO.
+
+    Si no termina a tiempo, no se asuste: el medidor se detiene pero tiene la posibilidad de terminar su historia y ganar un conejo de Plata, lo más interesante es hacer el cómic hasta el final. ¡Y un conejo de plata ya es muy bueno!
+
+    Para ser publicado en el sitio, sus páginas pueden estar en formato horizontal o vertical.
+
+    Pero una pequeña sugerencia: un formato horizontal es más fácil de leer en una pantalla.
+
+    El formato impuesto:
+
+    - {{planchesUploadInstructions.fileType.classico}}
+    - {{planchesUploadInstructions.imageDimensions.classico}}
+
+    No dude en probarlo para asegurarse de que puede dominar este formato el día D.
+
+    Nunca olvide que el desafío "Clásico" es un maratón de historietas, sin miniaturas: ¡cada página debe contener al menos 2 cuadros! Se tolerará una excepción de 3 páginas completas (además de la portada) para historias de 24 páginas (nos gusta una página completa de vez en cuando). Por lo tanto, debe hacer un folleto de 24 páginas (1 portada + 23 páginas de cómics) de las cuales 3 páginas pueden ser páginas completas (o el doble para los locos que quieren hacer 48 páginas).
+
+    Si desea crear miniaturas, hay:
+
+    ## LA VARIACIÓN "TURBOMEDIA"
+
+    Hay un formato de cómic creado específicamente para leer en pantalla : el Turbomedia.
+
+    Si no lo sabes, no se vaya a la cama sin haber leído esta página : https://turbointeractive.fr/faq/
+
+    Si desea profundizar, existe este portal : https://turbointeractive.fr/
+
+    Así que ahí lo tiene, con respecto al desafío, es lo mismo, con algunos detalles ... Como las formas de contar son diferentes, ya no contamos en términos de "páginas", sino en términos de "pantallas".
+
+    Por lo tanto, se trata de crear una tira cómica original de 80 pantallas (1 portada + 79 pantallas) en 23 horas para obtener un Conejo de Oro, o 160 pantallas para obtener el Conejo Rosa. El Conejo de Plata siempre se otorgará a aquellos que hayan publicado un trabajo completo después del final del cronómetro.
+
+    En esta variante, cada pantalla puede ser solo un dibujo, clásico o animado, equivalente a un cuadro clásico de BD.
+
+    El formato permanece impuesto:
+
+    - {{planchesUploadInstructions.fileType.turbomedia}}
+    - {{planchesUploadInstructions.imageDimensions.turbomedia}}
+
+    No dude en hacer algunas pruebas para asegurarse de que puede dominar este formato el día D.
+
+    Ahora pongas su disfraz de conejo/a...
+
+    ¡Aquí estás, estás listo/a para pasar excelentes 23hDA!

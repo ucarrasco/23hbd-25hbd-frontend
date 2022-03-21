@@ -1,0 +1,11 @@
+node_modules
+dist
+distemp
+build
+.env
+.env.23hbd
+.env.25hbd
+yarn-error.log
+common/typeDefs.gql
+server/tasks/test.js
+.DS_Store

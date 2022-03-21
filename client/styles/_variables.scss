@@ -1,0 +1,41 @@
+$font-family-base: Verdana, Arial, Helvetica, sans-serif;
+$font-size-base: 0.875rem;
+
+$info: #fff79d;
+$warning: #c12828;
+$gray-100: #f3f3f3;
+$gray-150: #e4e4e4;
+$gray-900: #666;
+
+$text-muted: #b3b3b3;
+$text-muted-light: #999;
+
+// not bootstrap:
+$gray-950: #4f4f4f;
+$toast-error-color: #e74c3c;
+$toast-error-progress-color: #d71703;
+$toast-warning-color: #872a35;
+
+@import "variables.hbd";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+@import '~bootstrap/scss/variables';
+
+$accent: $link-color;
+
+$breakpoints-str: xs 0px;
+
+@each $breakpoint, $size in $grid-breakpoints {
+  $breakpoints-str: $breakpoints-str separator #{$breakpoint} #{$size};
+}
+
+:export {
+  gridBreakpointsStr: $breakpoints-str;
+  primary: $primary;
+  toastColor: $toast-color;
+  toastProgressColor: $toast-progress-color;
+  toastErrorColor: $toast-error-color;
+  toastErrorProgressColor: $toast-error-progress-color;
+  toastWarningColor: $toast-warning-color;
+}

@@ -1,0 +1,35 @@
+@mixin paper-style-borders($padding) {
+  margin-bottom: 4px;
+  &::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: calc(100% + 2*#{$padding});
+    margin: calc(#{$padding} + 4px) #{-$padding} calc(#{-$padding} - 4px) #{-$padding};
+    background-image: url('~assets/images/25hbd/bordure-bottom.png');
+    background-repeat: repeat-x;
+  }
+}
+
+.hbd-content-container {
+
+  position: relative;
+  z-index: 2;
+
+  $padding: 1.5rem;
+  padding: $padding;
+  background-color: var(--content-container-bg-color);
+  border-radius: 1px;
+
+  &.main-main {
+    position: relative;
+    z-index: 1;
+
+    box-shadow: inset 10px -7px 20px -7px #414c215e;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    // @include paper-style-borders($padding);
+  }
+
+}

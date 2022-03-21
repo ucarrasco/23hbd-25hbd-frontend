@@ -1,0 +1,165 @@
+global:
+  event-name:
+    short: 23hBD
+    long: 23h de la BD
+    extra-long: 23 heures de la BD
+  your-silver-achievement: ton lapin d'argent
+  your-gold-achievement: ton lapin d'or
+  your-pink-achievement: ton lapin rose
+  silver-achievement: lapin d'argent
+  gold-achievement: lapin d'or
+  pink-achievement: lapin rose
+home-page:
+  content: |
+    # 24 PAGES DE BD EN 23 HEURES !
+
+    Les *$t(flavored:global.event-name.extra-long)* sont un marathon artistique qui se déroule sur internet.
+    Il faut créer une bande dessinée de 24 pages, avec un thème et une contrainte imposés, dans un délai de 23 heures.
+
+    Tout le monde peut participer, quel que soit son niveau ou son âge.
+
+    Pas de jury, mais un compteur. Les plus rapides décrochent un lapin d'or ou un lapin rose, les retardataires un lapin d'argent...
+
+    Pour plus de détails sur le déroulement de l'événement, consulte le [règlement](/rules/).
+  day-before-content:
+    dates-info: Le thème et la contrainte seront donnés ici à 13h !!
+  before-content:
+    dates-info: 'La quinzième édition des $t(flavored:global.event-name.short) aura lieu les samedi 26 et dimanche 27 mars 2022 de 13h00 à 13h00'
+  during-content:
+    theme-incoming: Le thème arrive..!
+  radio-carotte:
+    simple-link: 'Cette année, suivez les 23hBD avec le stream officiel, <1>Radio Carotte</1> !'
+rules-page:
+  content: |
+    # Règlement
+
+    Les **$t(flavored:global.event-name.extra-long)**, c'est un marathon dessiné où chacun·e doit créer une Bande Dessinée de 24 pages, sur un thème imposé, pendant 23 heures consécutives le temps d'un week-end. Chaque année, des centaines d'auteurices professionnel·les ou amateur·es à travers le monde tentent ce défi le jour du passage à l'heure d'été, seule journée qui se compose de 23 heures seulement.
+
+    Pour rappel, l'évènement est **totalement gratuit** et géré par une super équipe de bénévoles, la *Bunny Squad*.
+
+    ## QUI PEUT PARTICIPER ?
+
+    Les $t(flavored:global.event-name.short) sont ouvertes à tout le monde : tu peux être mineur·e ou majeur·e, professionnel·le ou amateur·e, peu importe, tout le monde est bienvenu !
+
+    **Il suffit de t'inscrire sur le site** et de te rendre disponible les **{{beginDate, dddd D, 1}} et {{endDate, dddd D MMMM YYYY, 2}} de {{beginDate, HH:ss, 1}} à {{endDate, HH:ss, 2}}** (heure française). Au minimum.
+
+    ## COMMENT PARTICIPER ?
+
+    Dans le contexte exceptionnel de cette édition, ton atelier, ton bureau, ta chambre ou tout autre endroit d'où tu pourras te connecter au site 23hbd.com sera bien suffisant une fois que tu te seras inscrit·e individuellement.
+
+    Tu peux évidemment participer en équipe, en ligne, ou avec les personnes qui sont déjà sous le même toit !
+
+    ## COMMENT SE REGROUPER ?
+
+    Le contexte actuel limite les regroupements physiques. Ça ne t'empêche pas de retrouver du monde en ligne, si tes ami·e·s ne sont pas disponible, rejoins-nous dans le terrier sur notre serveur [Discord](https://discord.gg/8xK3FVZ) ou dans le terrier du groupe [Facebook](https://www.facebook.com/groups/terrier23hbd), l'équipe et les autres participant·e·s pourront te soutenir et te dépanner :)
+
+    Et si tu streames, n'hésite pas à coller le lien de ton live dans ton profil de participant pour que les lecteur·rices t'encouragent et te soutiennent.
+
+    ## LE DÉFI "CLASSICO"
+
+    Il faut créer une bande dessinée originale de 24 pages (1 couverture + 23 pages, la dernière ou dos de couv / page des crédits incluse) en 23 heures consécutives : scénario, illustrations, lettrage, couleurs (attention la couleur reste ambitieuse vu le temps)…
+
+    Tous les types de travaux sont acceptés : dessin noir et blanc, couleur, collages, montages photographiques, roman-photo,  marionnettes, du moment que ce petit monde bulle ! L'important, c'est de s'amuser et de vivre pleinement ces 23 heures :)
+
+    Pour être sûr·e de bien profiter de ton temps, anticipe bien ce long week-end en préparant ton terrier : fais des provisions de matériel, boissons, nourriture, musique et tout ce dont tu pourras avoir besoin. Et prévois aussi des pauses et des temps de repos en t'organisant. Ce n'est pas un concours de vitesse mais un marathon !
+
+    Le samedi à 13h00 (heure française métropolitaine, GMT +1), le thème et la contrainte sont révélés sur le site, sur la page FB, sur Discord, sur Twitter, partout. Et le compte à rebours sera déclenché ! Tu auras jusqu'au lendemain 13h00 (GMT +2, du coup) pour tenter de relever le défi, publier ton histoire sur le site et obtenir un Lapin d'Or. Celleux qui oseront doubler le défi et réaliser un récit de 48 pages se verront gratifiés d'un Lapin Rose, le lapin de la frime.
+
+    Attention, TOUTE CORRECTION de tes pages APRÈS LA FIN du chrono entraîne la PERTE DU LAPIN D'OR. C'est une sécurité qui empêche toute triche. Ceci étant dit, en cas d'erreur contactez-nous sur un réseau, on ne mord pas. Sauf les carottes. Aaaah une petite carotte bien croquante...
+
+    Si tu ne finis pas dans les temps, pas de panique : le compteur est arrêté mais tu as la possibilité de terminer ton histoire les jours suivants et de décrocher un Lapin d'Argent, car le plus important c'est de réaliser une BD aboutie.
+    Et un Lapin d'Argent est un lapin honorable !
+
+    Pour être publiées sur le site, tes pages peuvent être au format paysage ou portrait. Il est cependant conseillé de préférer le format paysage, plus facile à lire partout.
+
+    **Attention aux formats imposés :**
+
+    -   {{planchesUploadInstructions.fileType.classico}}
+    -   {{planchesUploadInstructions.imageDimensions.classico}}
+
+    N'hésite pas à faire quelques essais afin d'être certain·e de pouvoir maîtriser ce format le jour J. Surtout si tu dessines sur papier et que tu dois scanner et redimensionner tes pages pour la publication.
+
+    **Précision pour les flemmard·e·s ;) on vous voit :**
+    Le défi « Classico » est un marathon de planches de bande dessinée, pas de vignettes ! **Chaque page doit donc contenir au moins 2 cases**. Une exception de 3 pleines pages (en plus de la couverture) est tolérée pour les récits de 24 pages. Il faut donc que vous réalisiez un livret de 24 pages (1 couverture + 23 pages de BD) dont 3 pages pourront être des pleines pages (ou le double pour les frimeur·euses qui veulent en faire 48).
+    Conseil : **si vous voulez créer des bandes dessinées en vignettes, essayez le Turbomedia**.
+
+    ## LA VARIATION "TURBOMEDIA"
+
+    Le Turbomédia est plus ancien que le webtoon et il est HORIZONTAL. Mais il est né du même principe : c'est un format de bande dessinée spécifiquement créée pour être lue sur écran.
+
+    Si tu ne connais pas, ne t'endors pas bête ce soir sans avoir lu cette page : https://turbointeractive.fr/faq/  
+    Si tu veux creuser le sujet, il y a ce portail : https://turbointeractive.fr
+
+    En ce qui concerne le défi, c'est le même, à quelques détails près…
+    Comme les façons de raconter sont différentes, on ne compte plus en terme de « pages », mais en terme « d'écrans ».
+    Il s'agit donc de créer en 23 heures une bande dessinée originale de 80 écrans (1 couverture + 79 écrans) pour obtenir un Lapin d'Or, ou 160 écrans pour décrocher le Lapin Rose. Le Lapin d'Argent sera toujours décerné à celleux qui auront publié une œuvre complète après la fin du chrono.
+    Dans cette variante, chaque écran peut n'être qu'un dessin, classique ou animé, équivalent à une case classique de BD.
+
+    Le format reste imposé :
+
+    -   {{planchesUploadInstructions.fileType.turbomedia}}
+    -   {{planchesUploadInstructions.imageDimensions.turbomedia}}
+
+    N'hésite pas à faire quelques essais afin d'être certain de pouvoir maîtriser ce format le jour J.
+
+    ## <span class="text-accent">NOUVEAU :</span> LE FORMAT WEBTOON
+
+    Ce format vertical de bande dessinée d’origine sud-coréenne s’installe aujourd’hui comme le nouveau standard international de BD en diffusion numérique. Si vous voulez en apprendre plus sur le Webtoon, son origine et des conseils pour commencer, vous pouvez aller faire un tour ici : [https://www.clipstudio.net/comment-dessiner/archives/160800](https://www.clipstudio.net/comment-dessiner/archives/160800)
+
+    C’est un format de bandes dessinées qui ne nécessite pas de matériel différent des autres formats, mais certains logiciels permettent d’assister à la création des documents à uploader. Par exemple, la configuration « Webtoon » dans  _Clip Studio Paint_  ou l’outil « tranches/slices » sous  _Photoshop_… D’autres manips sous d’autres logiciels sont certainement possibles.
+
+    N’hésitez pas à partager vos tips avec les lapins en lieux d’échange sur les réseaux sociaux.
+
+    En webtoon on ne parle pas vraiment de pages car la BD se lit comme une longue image verticale, seulement vous savez qu'ici c'est un peu comme au boulot, on aime vous donner des objectifs **CHIFFRÉS**.
+
+    - Pour décrocher votre lapin d'or il vous faudra donc fournir **48 « panels »** (images en orientation portrait), qui seront rassemblés sur le site les uns au dessus des autres pour former votre webtoon
+    - Pour conserver un côté équitable dans le marathon par rapport aux autres catégories, il vous est demandé de respecter  **un minimum de 72 vignettes**, soit un ratio de 1,5 vignettes par panel, à organiser comme vous le souhaitez dans votre récit
+    - Pour le lapin rose il faudra le double, donc 96 panels, soit 144 cases minimum
+    - Étant donné la nature du format webtoon, il n'est pas nécessaire de faire une "couverture" de votre BD, mais tout est permis !
+
+    Concernant ces fameux « panels » à uploader, voici le format demandé :
+
+    - {{planchesUploadInstructions.fileType.webtoon}}
+    - {{planchesUploadInstructions.imageDimensions.webtoon}}
+
+
+    Maintenant, enfile ton costume de lapin·e…
+    Te voilà prêt à vivre un grand marathon des $t(flavored:global.event-name.short)!
+
+contact-page:
+  title: Contact
+  content: |
+    **Vous voulez contacter le Boss :**
+    Turalo : [turalo@23hbd.com](mailto:turalo@23hbd.com)
+
+    **Vous êtes journaliste :**
+    Zia : [zia@23hbd.com](mailto:zia@23hbd.com)
+
+    **Vous avez besoin d'aide et d'infos pour organiser un regroupement dans votre école, atelier, médiathèque :**
+    Zia : [zia@23hbd.com](mailto:zia@23hbd.com)
+
+    **Vous rencontrez un bug ou un problème avec le site :**
+    Ugo / Ydrioss : [dev@23hbd.com](mailto:dev@23hbd.com)
+
+
+    **Mail général pour nous spammer :**
+    [mail@23hbd.com](mailto:mail@23hbd.com)
+
+    --------------------------
+
+    **Vous pouvez également contacter l'équipe sur :**
+
+    **Facebook :**
+    [http://www.facebook.com/23heuresdelaBD](http://www.facebook.com/23heuresdelaBD)
+
+
+    **Twitter :**
+    [https://twitter.com/23HBD](https://twitter.com/23HBD)
+
+    **Instagram :**
+    [https://twitter.com/23HBD](https://twitter.com/23HBD)
+
+account-page:
+  planches-page:
+    title-edit:
+      label: Titre de la BD

@@ -1,0 +1,15 @@
+global:
+  event-name:
+    short: 25hBD
+    long: 25 heures de la BD
+    extra-long: 25 heures de la BD et de l'illustration
+  your-silver-achievement: ta tortue d'argent
+  your-gold-achievement: ta tortue d'or
+  your-pink-achievement: ta tortue rouge
+  silver-achievement: tortue d'argent
+  gold-achievement: tortue d'or
+  pink-achievement: tortue rouge
+account-page:
+  planches-page:
+    title-edit:
+      label: Titre de la BD/série d'illustrations

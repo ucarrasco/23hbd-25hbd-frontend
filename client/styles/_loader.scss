@@ -1,0 +1,16 @@
+.loader {
+  $size: 80px;
+  $thickness: 4px;
+
+  border: $thickness solid rgba(black, 0.05);
+  border-top: $thickness solid $primary; // rgba(black, 0.3);
+  border-radius: 50%;
+  width: $size;
+  height: $size;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

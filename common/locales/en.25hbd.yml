@@ -1,0 +1,13 @@
+global:
+  event-name:
+    short: 25hBD
+    long: 25h de la BD
+    extra-long: 25 heures de la BD et de l'illustration (25-Hour Comics and Illustration Day)
+  your-silver-achievement: your silver turtle
+  your-gold-achievement: your golden turtle
+  your-pink-achievement: your red turtle
+
+account-page:
+  planches-page:
+    title-edit:
+      label: Title of the comic/serie of illustrations
